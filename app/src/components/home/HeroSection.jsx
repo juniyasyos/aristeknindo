@@ -9,7 +9,7 @@ import { asset } from '../../utils/asset';
 
 export default function HeroSection() {
   const { lang, t } = useLanguage();
-  const { hero } = HOME_DATA;
+  const data = HOME_DATA.hero;
 
   return (
     <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-12 sm:pt-24 sm:pb-16 bg-canvas">
