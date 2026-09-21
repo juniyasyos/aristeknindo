@@ -1,0 +1,662 @@
+company_profile:
+  metadata:
+    document_type: "Company Profile"
+    document_pages: 8
+    source: "ATM COMPANY PROFILE MASTER v2 (3).pdf"
+    company_name: "PT. Aris Teknindo Mandiri"
+    business_category: "Mekanikal & Elektrikal Kontraktor"
+
+  identity:
+    legal_name: "PT. Aris Teknindo Mandiri"
+    short_name: "ATM"
+    location:
+      city: "Bekasi"
+      province: "Jawa Barat"
+      address: "Perum Pondok Permata C17/46, Babelan, Bekasi, Jawa Barat"
+
+    business_description:
+      primary:
+        - "Pengadaan barang dan jasa"
+        - "Elektrikal"
+        - "Mekanikal"
+        - "Konstruksi"
+
+      supporting_capabilities:
+        - "Machining"
+        - "Fabrikasi"
+        - "Industrial Automation"
+        - "PLC-based automation"
+
+      target_industry:
+        primary: "Industri"
+        notable_sector: "Otomotif"
+
+      positioning:
+        description: >
+          Perusahaan pengadaan barang dan jasa yang mendukung kelancaran
+          operasional industri, khususnya perusahaan otomotif, melalui
+          layanan elektrikal, mekanikal, machining, konstruksi,
+          fabrikasi, dan otomasi industri.
+
+  business_scope:
+    procurement:
+      description: >
+        Pengadaan barang dan jasa untuk kebutuhan pabrik dan part industri.
+
+      product_characteristics:
+        - "Sebagian besar produk import"
+        - "Kualitas baik"
+        - "Standar internasional"
+
+    industrial_support:
+      purpose:
+        - "Mendukung kebutuhan operasional pabrik"
+        - "Mendukung kebutuhan part industri"
+        - "Mendukung sistem otomasi industri"
+        - "Mendukung kebutuhan konstruksi dan fabrikasi"
+
+  products_and_services:
+
+    automation_and_control:
+      section_title: "Automation & Control Part"
+      category: "Electrical / Industrial Automation"
+
+      description: >
+        Penyediaan produk elektrik, automation, dan control untuk kebutuhan
+        pabrik dan part industri.
+
+      characteristics:
+        - "Produk import"
+        - "Kualitas baik"
+        - "Standar internasional"
+
+      website_category:
+        slug: "automation-control"
+        label: "Automation & Control Part"
+
+      brand_information:
+        available_in_source: true
+        brand_names_extracted: true
+        extraction_source: "Image stream extraction from Page 3 of PDF (resource/page3_Image43.png)"
+        brands:
+          - name: "Mitsubishi Electric"
+            country: "Japan"
+            category: "PLC, Inverters, HMIs"
+          - name: "Yaskawa"
+            country: "Japan"
+            category: "Servos, Inverters, Motion Control"
+          - name: "Autonics"
+            country: "South Korea"
+            category: "Sensors & Temperature Controllers"
+          - name: "Panasonic SUNX"
+            country: "Japan"
+            category: "Industrial Sensors & Safety"
+          - name: "Fuji Electric"
+            country: "Japan"
+            category: "Inverters, Contactors, Power"
+          - name: "Hitachi"
+            country: "Japan"
+            category: "Inverters, Industrial Drives"
+          - name: "Oriental Motor"
+            country: "Japan"
+            category: "AC/DC Motors & Steppers"
+          - name: "Sanyo Denki (SANMOTION)"
+            country: "Japan"
+            category: "Servo Motors & Stepping Systems"
+          - name: "COGNEX"
+            country: "USA"
+            category: "Machine Vision & Barcode Readers"
+          - name: "KOGANEI"
+            country: "Japan"
+            category: "Pneumatics & Cylinders"
+          - name: "Shihlin Electric"
+            country: "Taiwan"
+            category: "Inverters & Switchgear"
+          - name: "Nidec-SHIMPO"
+            country: "Japan"
+            category: "Precision Gear Reducers"
+          - name: "NACHI"
+            country: "Japan"
+            category: "Hydraulics & Robotics"
+          - name: "Seametrics"
+            country: "USA"
+            category: "Flow Meters & Sensors"
+          - name: "NITTA MOORE"
+            country: "Japan"
+            category: "Tubing, Fittings, Pneumatics"
+          - name: "CASIX"
+            country: "Global"
+            category: "Optics & Industrial Sensors"
+        additional_project_brands:
+          - name: "FANUC"
+            category: "Servo Motors & Robotics"
+          - name: "Allen-Bradley"
+            category: "HMI & Automation"
+
+    mechanical:
+      section_title: "Mekanikal Part"
+      category: "Mechanical Industrial Parts"
+
+      description: >
+        Penyediaan produk mekanikal untuk kebutuhan pabrik dan part industri.
+
+      characteristics:
+        - "Produk import"
+        - "Kualitas baik"
+        - "Standar internasional"
+
+      website_category:
+        slug: "mechanical-parts"
+        label: "Mekanikal Part"
+
+      brand_information:
+        available_in_source: true
+        brand_names_extracted: true
+        extraction_source: "Image stream extraction from Page 3 of PDF (resource/page3_Image45.jpg)"
+        brands:
+          - name: "THK"
+            country: "Japan"
+            category: "Linear Motion Guides & Actuators"
+          - name: "HIWIN"
+            country: "Taiwan"
+            category: "Linear Guideways & Ball Screws"
+          - name: "NSK"
+            country: "Japan"
+            category: "Precision Bearings & Linear Guides"
+          - name: "NTN"
+            country: "Japan"
+            category: "Industrial Bearings & Precision Parts"
+          - name: "Koyo (JTEKT)"
+            country: "Japan"
+            category: "Bearings & Motion"
+          - name: "TIMKEN"
+            country: "USA"
+            category: "Tapered Bearings & Power Transmission"
+          - name: "FAG (Schaeffler)"
+            country: "Germany"
+            category: "Precision Industrial Bearings"
+          - name: "IKO (Nippon Thompson)"
+            country: "Japan"
+            category: "Needle Bearings & Linear Motion"
+          - name: "KHK Stock Gears"
+            country: "Japan"
+            category: "Standard Precision Gears"
+          - name: "TSUBAKI"
+            country: "Japan"
+            category: "Roller Chains & Power Transmission"
+          - name: "SAMICK"
+            country: "South Korea"
+            category: "Linear Bushings & Guides"
+          - name: "SIM (Sung-Il Machinery)"
+            country: "South Korea"
+            category: "Precision Couplings & Support Units"
+          - name: "HSC (Hanshin RoboChain)"
+            country: "South Korea"
+            category: "Cable Drag Chains / Carriers"
+
+    fabrication_and_machining:
+      section_title: "Fabrikasi dan Machining"
+
+      description: >
+        Layanan pembuatan berbagai material presisi tinggi yang digunakan
+        pada mesin industri dengan dukungan desain yang detail.
+
+      precision_parts:
+        - name: "Handle"
+          type: "Machining Part"
+        - name: "Drive Sprocket"
+          type: "Machining Part"
+        - name: "Flange Hydraulic"
+          type: "Hydraulic / Machining Part"
+        - name: "Pin"
+          type: "Precision Part"
+        - name: "Rod Cylinder"
+          type: "Machining Part"
+        - name: "Hard Nail"
+          type: "Machining Part"
+        - name: "Half Shaft Gear"
+          type: "Machining Part"
+        - name: "Stabilizer"
+          type: "Machine Part"
+        - name: "Shaft Chain Feeder"
+          type: "Machine Part"
+        - name: "Gear"
+          type: "Mechanical Part"
+        - name: "Drum Pulley"
+          type: "Mechanical Part"
+        - name: "Bearing Support"
+          type: "Mechanical Part"
+
+      additional_capability:
+        - "Pembuatan berbagai material lainnya sesuai kebutuhan"
+        - "Design detail untuk kebutuhan machining"
+
+      fabrication_scope:
+        - name: "Cover Machine"
+          type: "Fabrication"
+        - name: "Conveyor"
+          type: "Industrial Fabrication"
+        - name: "Ducting"
+          type: "Industrial Fabrication"
+        - name: "Tangki"
+          type: "Industrial Fabrication"
+        - name: "Struktur Konstruksi"
+          type: "Construction Fabrication"
+        - name: "Dan kebutuhan fabrikasi lainnya"
+
+      website_category:
+        slug: "fabrication-machining"
+        label: "Fabrikasi & Machining"
+
+    contractor:
+      section_title: "Kontraktor"
+
+      specialization:
+        field: "Industrial Automation"
+        primary_technology: "Programmable Logic Controller (PLC)"
+
+      scope:
+        - "Konsep sistem"
+        - "Pemrograman"
+        - "Pengadaan material"
+        - "Pemasangan instalasi"
+        - "Start-up sistem PLC"
+
+      end_to_end_flow:
+        - step: 1
+          activity: "Konsep"
+        - step: 2
+          activity: "Programming"
+        - step: 3
+          activity: "Material Procurement"
+        - step: 4
+          activity: "Installation"
+        - step: 5
+          activity: "System Start-up"
+
+      website_category:
+        slug: "industrial-automation-contractor"
+        label: "Kontraktor Otomasi Industri"
+
+  facilities:
+    section_title: "Workshop Kami"
+
+    equipment:
+      - name: "Mesin Bubut"
+        category: "Machining Equipment"
+      - name: "Mesin Milling"
+        category: "Machining Equipment"
+      - name: "Center Bor"
+        category: "Machining Equipment"
+      - name: "Mesin CNC"
+        category: "CNC Machining Equipment"
+
+    website_purpose:
+      - "Menunjukkan kemampuan machining internal"
+      - "Menunjukkan fasilitas produksi"
+      - "Meningkatkan kredibilitas teknis"
+      - "Mendukung informasi layanan fabrikasi dan machining"
+
+  work_experience:
+    section_title: "Pengalaman Kerja"
+
+    projects:
+      - title: "Pembuatan Panel Control Weighing Automation System"
+        category:
+          - "Automation"
+          - "Control Panel"
+          - "Weighing System"
+
+      - title: "Instalasi Cable Tray"
+        category:
+          - "Electrical Installation"
+          - "Industrial Installation"
+
+      - title: "Troubleshot dan Instalasi Servo Motor FANUC"
+        category:
+          - "Troubleshooting"
+          - "Servo Motor"
+          - "Industrial Automation"
+        brand_or_platform: "FANUC"
+
+      - title: "Upgrade HMI Allen-Bradley"
+        category:
+          - "HMI"
+          - "Industrial Automation"
+          - "System Upgrade"
+        brand_or_platform: "Allen-Bradley"
+
+    website_purpose:
+      - "Project showcase"
+      - "Technical credibility"
+      - "Proof of experience"
+      - "Reference for prospective clients"
+
+  contact:
+    office:
+      address: "Perum Pondok Permata C17/46, Babelan, Bekasi – Jawa Barat"
+
+    phone:
+      - "0812 8380 895"
+      - "0895 1442 9444"
+
+    email:
+      general:
+        - "admin@aristeknindomandiri.com"
+        - "sales@aristeknindomandiri.com"
+
+    website:
+      current_domain: "www.aristeknindomandiri.com"
+
+  communication:
+    company_message:
+      purpose:
+        - "Dasar pertimbangan"
+        - "Penawaran"
+        - "Kerja sama"
+        - "Informasi produk dan layanan"
+
+      credibility_statement:
+        experience_areas:
+          - "Elektrikal"
+          - "Mekanikal"
+          - "Machining"
+          - "Konstruksi"
+
+      trust_basis:
+        - "Pengalaman kerja"
+        - "Pengalaman kerja sama"
+        - "Kemampuan teknis"
+        - "Kemampuan menyediakan produk industri"
+
+  website_content_model:
+    # Struktur ini mengacu pada Information Architecture di SRS (Bagian 4).
+    # Urutan mencerminkan urutan navigasi utama website.
+    navigation_structure: |
+      Home
+      ├─ About (Company Profile + Vision & Mission)
+      ├─ Services / Capabilities
+      ├─ Products
+      ├─ Industries          [ON HOLD]
+      ├─ Projects / Portfolio
+      └─ Contact / Request a Quote
+
+    recommended_primary_sections:
+      - key: "home"
+        label: "Home"
+        nav_order: 1
+        srs_ref: "5.1"
+        content:
+          - "Hero (headline + deskripsi singkat + CTA)"
+          - "Company introduction singkat"
+          - "Core capabilities / layanan utama"
+          - "Featured products preview"
+          - "Selected projects preview"
+          - "Trust / company info"
+          - "CTA (WhatsApp / form)"
+
+      - key: "about"
+        label: "About"
+        nav_order: 2
+        srs_ref: "5.2"
+        sub_pages:
+          - key: "company-profile"
+            label: "Company Profile"
+            content:
+              - "Identitas perusahaan"
+              - "Deskripsi bisnis"
+              - "Lingkup layanan"
+              - "Target industri"
+          - key: "vision-mission"
+            label: "Visi & Misi"
+            content_status: "missing"
+            note: "Perlu disediakan oleh client"
+        additional_content:
+          - "Legalitas / sertifikasi (jika ada dan disetujui)"
+
+      - key: "services"
+        label: "Services / Capabilities"
+        nav_order: 3
+        srs_ref: "5.3"
+        categories:
+          - "Automation & Control (PLC)"
+          - "Mekanikal & Machining"
+          - "Fabrikasi"
+          - "Konstruksi"
+          - "Installation & Troubleshooting"
+        notes:
+          - "Workshop (mesin bubut, milling, CNC) masuk sebagai sub-section di sini, bukan halaman tersendiri"
+        workshop_subsection:
+          label: "Fasilitas Workshop"
+          equipment:
+            - "Mesin Bubut"
+            - "Mesin Milling"
+            - "Center Bor"
+            - "Mesin CNC"
+
+      - key: "products"
+        label: "Products"
+        nav_order: 4
+        srs_ref: "5.4"
+        categories:
+          - "Automation & Control Part"
+          - "Mekanikal Part"
+        content_status: "perlu konfirmasi produk aktif dari client"
+
+      - key: "industries"
+        label: "Industries"
+        nav_order: 5
+        srs_ref: "5.5"
+        status: "on_hold"
+        reason: >
+          Data sektor industri tidak tersedia secara eksplisit di Company Profile.
+          PDF hanya menyebut satu sektor (otomotif) tanpa rincian lebih lanjut.
+          Halaman ini ditunda sampai ada konfirmasi dan data tambahan dari client.
+        available_data:
+          - sector: "Otomotif"
+            source: "Company Profile PDF Hal. 2"
+            note: "Disebut eksplisit sebagai sektor yang didukung"
+          - sector: "Industri Manufaktur Umum"
+            source: "Implied dari 'pabrik-pabrik' di Company Profile"
+            note: "Inferensi — perlu konfirmasi client sebelum ditampilkan"
+        pending_client_input:
+          - "Daftar sektor industri yang sudah pernah dilayani"
+          - "Daftar sektor yang ingin dijangkau"
+          - "Persetujuan untuk menampilkan nama/logo klien per industri"
+
+      - key: "projects"
+        label: "Projects / Portfolio"
+        nav_order: 6
+        srs_ref: "5.6"
+        available_projects:
+          - "Pembuatan Panel Control Weighing Automation System"
+          - "Instalasi Cable Tray"
+          - "Troubleshot dan Instalasi Servo Motor FANUC"
+          - "Upgrade HMI Allen-Bradley"
+        content_status: "limited"
+        pending_client_input:
+          - "Foto dokumentasi tiap project"
+          - "Detail scope, lokasi, dan periode project"
+          - "Persetujuan client untuk publish"
+
+      - key: "contact"
+        label: "Contact / Request a Quote"
+        nav_order: 7
+        srs_ref: "5.7"
+        content:
+          - "Alamat kantor"
+          - "Nomor telepon"
+          - "Email"
+          - "Integrasi WhatsApp CTA"
+          - "Form inquiry / permintaan quotation"
+          - "Jam operasional (perlu konfirmasi client)"
+
+  website_content_relationships:
+    automation:
+      products:
+        - "Automation & Control Part"
+      services:
+        - "PLC Programming"
+        - "PLC Installation"
+        - "System Start-up"
+        - "Troubleshooting"
+        - "HMI Upgrade"
+        - "Servo Motor Installation"
+
+    mechanical:
+      products:
+        - "Mekanikal Part"
+      services:
+        - "Machining"
+        - "Precision Part Manufacturing"
+        - "Fabrikasi"
+
+    fabrication:
+      services:
+        - "Machine Cover"
+        - "Conveyor"
+        - "Ducting"
+        - "Tank"
+        - "Construction Structure"
+
+    industrial_support:
+      capabilities:
+        - "Procurement"
+        - "Installation"
+        - "Fabrication"
+        - "Machining"
+        - "Automation"
+        - "Construction"
+
+  content_constraints:
+    source_supported:
+      - "Company identity"
+      - "Business scope"
+      - "Product categories"
+      - "Service categories"
+      - "Workshop equipment"
+      - "Work experience"
+      - "Contact information"
+
+    not_explicitly_available:
+      company_history:
+        status: "missing"
+        reason: "Tidak ada tahun berdiri atau timeline perusahaan dalam PDF"
+
+      vision_mission:
+        status: "missing"
+
+      legal_company_details:
+        status: "missing"
+        examples:
+          - "NIB"
+          - "NPWP"
+          - "Akta perusahaan"
+          - "SK Kemenkumham"
+
+      certifications:
+        status: "missing"
+
+      client_list:
+        status: "missing"
+
+      industries_detail:
+        status: "on_hold"
+        reason: >
+          Company Profile hanya menyebut sektor otomotif secara eksplisit.
+          Tidak ada daftar industri yang dilayani. Data ini perlu dikumpulkan
+          dari client sebelum halaman Industries dapat dibuat.
+        available:
+          - "Otomotif (eksplisit)"
+        to_confirm_from_client:
+          - "Daftar industri yang sudah dilayani"
+          - "Industri target ke depan"
+
+      detailed_product_catalog:
+        status: "missing"
+
+      brand_list:
+        status: "extracted"
+        source: "PDF Page 3 image streams (page3_Image43.png & page3_Image45.jpg)"
+        total_brands: 29
+        note: >
+          Daftar brand resmi berhasil diekstrak dari gambar logo di Halaman 3 PDF.
+          Mencakup 16 brand Automation & Control dan 13 brand Mekanikal/Motion.
+
+      project_details:
+        status: "limited"
+        missing:
+          - "Client name"
+          - "Project date"
+          - "Project location"
+          - "Project scope detail"
+          - "Project images/case study"
+          - "Project outcome"
+
+      company_statistics:
+        status: "missing"
+        examples:
+          - "Jumlah tenaga kerja"
+          - "Jumlah proyek"
+          - "Years of experience"
+          - "Production capacity"
+
+  website_requirements_implications:
+    content_strategy:
+      primary_message: >
+        PT. Aris Teknindo Mandiri sebagai penyedia kebutuhan
+        mekanikal-elektrikal, machining, fabrikasi, pengadaan,
+        konstruksi, dan otomasi industri.
+
+      strongest_content_assets:
+        - "Automation & Control"
+        - "Mechanical Parts"
+        - "Fabrication & Machining"
+        - "PLC Industrial Automation"
+        - "Workshop Facilities"
+        - "Technical Work Experience"
+
+    visual_assets_needed:
+      - "Foto workshop"
+      - "Foto mesin bubut"
+      - "Foto mesin milling"
+      - "Foto CNC"
+      - "Foto project"
+      - "Foto control panel"
+      - "Foto instalasi cable tray"
+      - "Foto servo motor FANUC"
+      - "Foto HMI Allen-Bradley"
+      - "Logo perusahaan"
+      - "Foto produk/part jika tersedia"
+
+    additional_client_input_required:
+      - "Logo resolusi tinggi"
+      - "Foto workshop terbaru"
+      - "Foto project"
+      - "Daftar brand produk"
+      - "Daftar produk yang benar-benar ingin ditampilkan"
+      - "Data legal perusahaan jika ingin ditampilkan"
+      - "Visi & misi jika ingin ditampilkan"
+      - "Nama/daftar klien jika boleh dipublikasikan"
+      - "Nomor WhatsApp utama untuk CTA"
+      - "Preferensi bahasa Indonesia/English"
+      - "Referensi visual website"
+
+  source_integrity:
+    rule: >
+      Seluruh data di atas berasal dari Company Profile yang diberikan.
+      Informasi yang tidak tersedia secara eksplisit tidak diisi dengan
+      asumsi atau data eksternal.
+    critical_notes:
+      - >
+        Dokumen menggunakan istilah "Kontraktor" dengan fokus pada
+        otomasi industri dan PLC.
+      - >
+        "Pengadaan barang dan jasa" merupakan bagian penting dari
+        positioning perusahaan.
+      - >
+        Industri otomotif disebut secara eksplisit sebagai sektor yang
+        didukung perusahaan.
+      - >
+        Workshop dan pengalaman kerja merupakan aset penting untuk
+        membangun kredibilitas website.
