@@ -1,3 +1,4 @@
+import { asset } from "../../utils/asset";
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
@@ -69,7 +70,7 @@ export default function SplitStageSection() {
         "Neat Panel Wiring with Numbered Ferrules & IEC Compliance",
         "Complete I/O Simulation Testing & On-Site Machine Start-Up"
       ],
-      image: "/images/project-hmi-1.webp",
+      image: asset("/images/project-hmi-1.webp"),
       metrics: [
         { labelId: "Lead Time Selesai", labelEn: "Turnaround Time", val: "7 Hari", noteId: "vs Inden 90 Hari", noteEn: "vs 90-Day Import" },
         { labelId: "Uji Fungsi I/O", labelEn: "Commissioning", val: "100% FAT", noteId: "Start-up di Pabrik", noteEn: "On-site Factory Start" },
@@ -123,7 +124,7 @@ export default function SplitStageSection() {
         "Lathe, Milling & CNC Machining with Strict ±0.01 mm Tolerance",
         "0-Lead-Time: Ready-to-Install Parts within 2–5 Working Days"
       ],
-      image: "/images/part-shaft-gear.webp",
+      image: asset("/images/part-shaft-gear.webp"),
       metrics: [
         { labelId: "Akurasi Ukur", labelEn: "Accuracy", val: "±0.01 mm", noteId: "Mikrometer Verified", noteEn: "Micrometer Verified" },
         { labelId: "Lead Time Sourcing", labelEn: "Turnaround", val: "2-5 Hari", noteId: "0-Inden Luar Negeri", noteEn: "Zero Import Delay" },
@@ -177,7 +178,7 @@ export default function SplitStageSection() {
         "Strict Physical Separation: 380V Power vs 24VDC Signal Cables",
         "Vibration-Resistant Heavy-Duty Structural Mounting Brackets"
       ],
-      image: "/images/project-cabletray-1.webp",
+      image: asset("/images/project-cabletray-1.webp"),
       metrics: [
         { labelId: "Kesesuaian Audit", labelEn: "Audit Compliance", val: "100% K3", noteId: "Standar Keselamatan", noteEn: "Plant HSE Standard" },
         { labelId: "Interferensi", labelEn: "Signal Quality", val: "0-Noise", noteId: "Sensor Akurat", noteEn: "Clean Signal Flow" },
@@ -231,7 +232,7 @@ export default function SplitStageSection() {
         "Strict Exact Part Number Verification Prior to Delivery",
         "On-Site Compatibility Consultation & Technical Installation Support"
       ],
-      image: "/images/part-sprocket.webp",
+      image: asset("/images/part-sprocket.webp"),
       metrics: [
         { labelId: "Jaringan Suplai", labelEn: "Global Network", val: "29+ Brand", noteId: "Jepang, Jerman, AS", noteEn: "Japan, Germany, USA" },
         { labelId: "Jaminan Orisinal", labelEn: "Authenticity", val: "100% Asli", noteId: "Garansi Pabrikan", noteEn: "Official Warranty" },

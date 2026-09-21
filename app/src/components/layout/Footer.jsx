@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ShieldCheck, ArrowUpRight } from 'lucide-react';
 import { SITE } from '../../data/site';
 import { useLanguage } from '../../context/LanguageContext';
+import { asset } from '../../utils/asset';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -16,7 +17,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Link to="/" className="inline-block">
               <img
-                src="/images/logo-dark-mode.png"
+                src={asset('/images/logo-dark-mode.png')}
                 alt="PT. Aris Teknindo Mandiri"
                 className="h-9 sm:h-10 w-auto object-contain"
               />

@@ -4,6 +4,8 @@ import { Menu, X, PhoneCall, Globe, ArrowRight, ShieldCheck } from 'lucide-react
 import { SITE } from '../../data/site';
 import { useLanguage } from '../../context/LanguageContext';
 
+import { asset } from '../../utils/asset';
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +37,7 @@ export default function Navbar() {
           {/* Brand Logo */}
           <Link to="/" className="flex items-center group">
             <img
-              src="/images/logo-dark-mode.png"
+              src={asset('/images/logo-dark-mode.png')}
               alt="PT. Aris Teknindo Mandiri"
               className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
             />

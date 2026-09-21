@@ -1,3 +1,6 @@
+const BASE = (import.meta.env?.BASE_URL || "/").replace(/\/$/, "");
+const asset = (p) => `${BASE}/${p.replace(/^\//, "")}`;
+
 export const HOME_DATA = {
   hero: {
     badgeId: "Mekanikal, Elektrikal & Kontraktor Otomasi PLC • Bekasi",
@@ -16,7 +19,7 @@ export const HOME_DATA = {
       { value: "0-Inden", labelId: "Alternatif Cepat Tanpa Inden Luar Negeri", labelEn: "Rapid In-House Machining" },
       { value: "Bekasi", labelId: "Akses Cikarang & Karawang", labelEn: "Cikarang & Karawang Hub" }
     ],
-    image: "/images/hero-industrial.jpg"
+    image: asset("/images/hero-industrial.jpg")
   },
 
   brandsTicker: {
@@ -58,7 +61,7 @@ export const HOME_DATA = {
         brandsCovered: ["Mitsubishi Electric", "Yaskawa", "Autonics", "Panasonic SUNX", "Fuji Electric", "Allen-Bradley", "FANUC"],
         actionLabelId: "Konsultasi Kebutuhan PLC",
         actionLabelEn: "Consult PLC Requirements",
-        image: "/images/project-hmi-1.webp",
+        image: asset("/images/project-hmi-1.webp"),
         link: "/services#automation",
         specs: [
           { labelId: "Main Controller", labelEn: "Main Controller", val: "Mitsubishi Q/FX, Omron CJ/NX, Allen-Bradley" },
@@ -96,7 +99,7 @@ export const HOME_DATA = {
         brandsCovered: ["THK", "HIWIN", "NSK", "KHK Stock Gears", "Tsubaki", "Koyo", "Timken"],
         actionLabelId: "Kirim Drawing untuk Dihitung Biaya",
         actionLabelEn: "Submit Drawing for Quote",
-        image: "/images/part-shaft-gear.webp",
+        image: asset("/images/part-shaft-gear.webp"),
         link: "/services#machining",
         specs: [
           { labelId: "Kapasitas Workshop", labelEn: "Workshop Capacity", val: "Bubut s/d Ø600mm x 2000mm, Milling, CNC 3-Axis" },
@@ -134,7 +137,7 @@ export const HOME_DATA = {
         brandsCovered: ["Hanshin RoboChain", "TSUBAKI", "Casix", "Nitta Moore"],
         actionLabelId: "Diskusikan Kebutuhan Fabrikasi",
         actionLabelEn: "Discuss Fabrication Needs",
-        image: "/images/project-cabletray-1.webp",
+        image: asset("/images/project-cabletray-1.webp"),
         link: "/services#fabrication",
         specs: [
           { labelId: "Tipe Tray / Jalur", labelEn: "Tray / Trunking Type", val: "Perforated Tray, Cable Ladder, Trunking Galvanis" },
@@ -172,7 +175,7 @@ export const HOME_DATA = {
         brandsCovered: ["THK", "NSK", "Timken", "Autonics", "Mitsubishi", "Yaskawa", "HIWIN", "NTN", "Cognex"],
         actionLabelId: "Kirim Part Number untuk Cek Stok",
         actionLabelEn: "Check Part Availability",
-        image: "/images/part-sprocket.webp",
+        image: asset("/images/part-sprocket.webp"),
         link: "/products",
         specs: [
           { labelId: "Cakupan Brand", labelEn: "Brand Coverage", val: "29+ Merek Resmi (Mitsubishi, Yaskawa, THK, NSK, dll.)" },
@@ -205,7 +208,7 @@ export const HOME_DATA = {
         roleEn: "Precision Cylindrical & Shaft Turning",
         descId: "Digunakan untuk pembubutan poros bertingkat, ulir presisi metrik/inci, pin pasak, bushing bronze, dan rekondisi bagian mesin yang aus dengan toleransi mikrometer.",
         descEn: "Handles precision stepped shafts, metric/inch threading, dowel pins, bronze bushings, and reconditioning of worn machine parts to micrometer tolerances.",
-        image: "/images/workshop-lathe.webp",
+        image: asset("/images/workshop-lathe.webp"),
         capabilities: ["Shaft bertingkat hingga diameter besar", "Ulir baut & drat khusus", "Bushing bronze & bearing housing", "Toleransi ketat sesuai ISO fit"],
         specs: [
           { labelId: "Kapasitas Diameter", labelEn: "Max Swing Diameter", val: "Hingga Ø600 mm" },
@@ -223,7 +226,7 @@ export const HOME_DATA = {
         roleEn: "Surface Planing, Keyways & Gear Profiles",
         descId: "Fasilitas penyerutan bidang datar, pembuatan alur pasak (keyway), kantong slotting, profil sprocket roda gigi, dan titik bor pusat presisi tinggi.",
         descEn: "Equipped for flat surface facing, precision keyway slotting, pocket machining, sprocket profiling, and coordinate center hole drilling.",
-        image: "/images/workshop-milling.webp",
+        image: asset("/images/workshop-milling.webp"),
         capabilities: ["Alur pasak (keyway) presisi", "Flange hidrolik & dudukan mesin", "Pengeboran multi-titik presisi", "Perataan permukaan balok logam"],
         specs: [
           { labelId: "Meja Kerja Mesin", labelEn: "Working Table", val: "Heavy-duty Bed Clamping" },
@@ -241,7 +244,7 @@ export const HOME_DATA = {
         roleEn: "Complex Contours & High-Repeatability Runs",
         descId: "Pengerjaan kontur 2D/3D rumit dengan kontrol numerik komputer untuk suku cadang mesin otomotif yang membutuhkan repetisi akurasi digital seragam.",
         descEn: "Processes intricate 2D/3D geometries with digital computer control for automotive production parts demanding tight, identical repeatability.",
-        image: "/images/workshop-cnc.webp",
+        image: asset("/images/workshop-cnc.webp"),
         capabilities: ["Kontur rumit digital CAD/CAM", "Akurasi repetisi tinggi", "Komponen jig & fixture khusus", "Bahan baja, stainless, kuningan, & POM"],
         specs: [
           { labelId: "Sistem Kontrol", labelEn: "Control System", val: "Digital 3-Axis CNC CAD/CAM Controller" },
@@ -259,7 +262,7 @@ export const HOME_DATA = {
         roleEn: "Neat Wiring & Pre-Shipment I/O Simulation",
         descId: "Area perakitan kabel panel kontrol, instalasi ducting kabel, terminal block, pemasangan inverter drive, serta uji simulasi I/O PLC sebelum dikirim ke pabrik.",
         descEn: "Dedicated space for control panel wiring, cable ducting, inverter drive installation, and exhaustive PLC I/O functional simulation prior to field deployment.",
-        image: "/images/project-weighing-2.webp",
+        image: asset("/images/project-weighing-2.webp"),
         capabilities: ["Standar penataan kabel rapi & terlabel", "Simulasi run-test logic PLC", "Pemeriksaan isolasi & grounding", "Pengujian tombol emergency & interlock"],
         specs: [
           { labelId: "Standar Wiring", labelEn: "Wiring Standard", val: "IEC 60204-1 & Penomoran Ferrule Rapi" },
@@ -286,7 +289,7 @@ export const HOME_DATA = {
         titleEn: "Weighing Automation System Control Panel",
         category: "Otomasi & Kontraktor PLC",
         badge: "Integrasi PLC & Sensor",
-        images: ["/images/project-weighing-1.webp", "/images/project-weighing-2.webp"],
+        images: [asset("/images/project-weighing-1.webp"), asset("/images/project-weighing-2.webp")],
         systemId: "Sistem Penimbangan Bahan Baku Otomatis",
         systemEn: "Automated Raw Material Batch Weighing",
         scopeId: "Perancangan skematik elektrikal, perakitan panel kabel terlabel rapi, integrasi modul penimbang digital dengan PLC, dan kalibrasi load cell.",
@@ -301,7 +304,7 @@ export const HOME_DATA = {
         titleEn: "FANUC Servo Motor Troubleshooting & Installation",
         category: "Diagnosa & Perbaikan Mesin",
         badge: "Spesialisasi Otomotif",
-        images: ["/images/project-fanuc-1.webp", "/images/project-fanuc-2.webp"],
+        images: [asset("/images/project-fanuc-1.webp"), asset("/images/project-fanuc-2.webp")],
         systemId: "Lini Manufaktur Komponen Otomotif",
         systemEn: "Automotive Precision Machining Cell",
         scopeId: "Investigasi alarm drive servo FANUC, pengujian resistansi lilitan motor, penggantian unit servo, setting parameter encoder, dan uji gerak sumbu mesin.",
@@ -316,7 +319,7 @@ export const HOME_DATA = {
         titleEn: "Allen-Bradley Touchscreen HMI Modernization",
         category: "Peremajaan Sistem Kontrol",
         badge: "Modernisasi Sistem",
-        images: ["/images/project-hmi-1.webp", "/images/project-hmi-2.webp", "/images/project-hmi-3.webp"],
+        images: [asset("/images/project-hmi-1.webp"), asset("/images/project-hmi-2.webp"), asset("/images/project-hmi-3.webp")],
         systemId: "Antarmuka Kontrol Mesin Manufaktur",
         systemEn: "Manufacturing Line Machine Interface",
         scopeId: "Penggantian monitor kontrol usang ke unit touchscreen Allen-Bradley PanelView, konversi program grafis, pemetaan tag komunikasi PLC, dan pembuatan alarm banner.",
@@ -331,7 +334,7 @@ export const HOME_DATA = {
         titleEn: "Industrial Power & Instrumentation Cable Tray Installation",
         category: "Konstruksi & Kelistrikan",
         badge: "Standar Keselamatan K3",
-        images: ["/images/project-cabletray-1.webp", "/images/project-cabletray-2.webp"],
+        images: [asset("/images/project-cabletray-1.webp"), asset("/images/project-cabletray-2.webp")],
         systemId: "Infrastruktur Distribusi Daya & Sinyal Pabrik",
         systemEn: "Plant-wide Power & Signal Distribution Grid",
         scopeId: "Fabrikasi bracket penopang, pemasangan ratusan meter jalur cable tray galvanis berkapasitas berat, pemisahan rute kabel daya dan sinyal instrumen.",

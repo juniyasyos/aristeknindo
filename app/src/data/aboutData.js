@@ -1,3 +1,6 @@
+const BASE = (import.meta.env?.BASE_URL || '/').replace(/\/$/, '');
+const asset = (p) => `${BASE}/${p.replace(/^\//, '')}`;
+
 export const ABOUT_DATA = {
   header: {
     badgeId: "PROFIL KORPORAT & KREDIBILITAS VENDOR",
@@ -17,7 +20,7 @@ export const ABOUT_DATA = {
     p1En: "Rooted in Bekasi, West Java—the industrial heartland of Indonesia's manufacturing and automotive sectors—PT. Aris Teknindo Mandiri was established to bridge a common operational gap: the plant need for a partner who deeply understands electrical control programming logic while possessing direct in-house capabilities to fabricate high-precision metal parts.",
     p2Id: "Pengalaman lapangan bertahun-tahun dalam menangani troubleshooting mesin pabrik membuktikan bahwa kami mampu menjawab dua kebutuhan kunci industri sekaligus: kekuatan fisik suku cadang logam (machining toleransi ketat) dan stabilitas logika kendali (otomasi PLC & sensor presisi). Portofolio kerja kami menjadi bukti nyata dedikasi dalam menghadirkan suku cadang tahan lama dan sistem otomasi yang andal.",
     p2En: "Years of hands-on field experience resolving manufacturing line emergencies have proven our capability to deliver two core industrial demands simultaneously: high-tolerance metal spare parts and rock-solid automation logic. Our project history stands as tangible proof of our commitment to zero downtime and uncompromising engineering integrity.",
-    image: "/images/hero-industrial.jpg"
+    image: asset('/images/hero-industrial.jpg')
   },
 
   visionMission: {
@@ -63,7 +66,7 @@ export const ABOUT_DATA = {
     signerTitleEn: "Board of Directors, PT. Aris Teknindo Mandiri",
     signerLocId: "Bekasi, Jawa Barat",
     signerLocEn: "Bekasi, West Java",
-    image: "/images/founder-portrait.jpg"
+    image: asset('/images/founder-portrait.jpg')
   },
 
   coreValues: [

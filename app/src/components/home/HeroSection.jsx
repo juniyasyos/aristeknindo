@@ -5,20 +5,21 @@ import { useLanguage } from '../../context/LanguageContext';
 import { HOME_DATA } from '../../data/homeData';
 import { SITE } from '../../data/site';
 import { ArrowRight, MessageSquare } from 'lucide-react';
+import { asset } from '../../utils/asset';
 
 export default function HeroSection() {
-  const { lang } = useLanguage();
-  const data = HOME_DATA.hero;
+  const { lang, t } = useLanguage();
+  const { hero } = HOME_DATA;
 
   return (
-    <section className="relative overflow-hidden min-h-[520px] sm:min-h-[560px] lg:min-h-[640px] flex items-center border-b border-slate-border/50">
+    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-12 sm:pt-24 sm:pb-16 bg-canvas">
       {/* Background Image: Full screen/section industrial visual */}
       <div className="absolute inset-0 z-0">
         <motion.img
           initial={{ scale: 1.06, opacity: 0.8 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.4, ease: "easeOut" }}
-          src="/images/bg-hero-section.png"
+          src={asset('/images/bg-hero-section.png')}
           alt="Industrial Automation and Machining Background"
           className="w-full h-full object-cover object-center lg:object-right select-none pointer-events-none"
         />
