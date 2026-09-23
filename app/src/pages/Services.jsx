@@ -33,8 +33,8 @@ export default function Services() {
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-6">
             {lang === 'id'
-              ? "Layanan Rekayasa Terintegrasi: Dari Machining Presisi Hingga Kontraktor PLC"
-              : "Integrated Engineering: In-House Machining to Turnkey PLC Contracting"}
+              ? "Layanan Permesinan Presisi dan Kontraktor Otomasi PLC Terintegrasi"
+              : "Integrated Precision Machining & Turnkey PLC Contracting"}
           </h1>
           <p className="text-base sm:text-lg text-slate-muted max-w-3xl mx-auto leading-relaxed">
             {lang === 'id'
@@ -70,7 +70,7 @@ export default function Services() {
                   <div className="space-y-4 mb-6">
                     <div className="p-4 rounded-xl bg-canvas-subtle/80 border border-amber-500/20">
                       <span className="text-xs font-mono text-amber-400 font-bold uppercase block mb-1">
-                        {lang === 'id' ? "Tantangan Pabrik:" : "Operational Challenge:"}
+                        {lang === 'id' ? "Tantangan Lapangan" : "Operational Challenge"}
                       </span>
                       <p className="text-xs sm:text-sm text-slate-muted">
                         {lang === 'id' ? p.problemId : p.problemEn}
@@ -79,7 +79,7 @@ export default function Services() {
 
                     <div className="p-4 rounded-xl bg-canvas-subtle/80 border border-emerald-500/20">
                       <span className="text-xs font-mono text-emerald-400 font-bold uppercase block mb-1">
-                        {lang === 'id' ? "Solusi Eksekusi ATM:" : "ATM Execution Solution:"}
+                        {lang === 'id' ? "Solusi Pengerjaan ATM" : "ATM Engineering Solution"}
                       </span>
                       <p className="text-xs sm:text-sm text-slate-muted">
                         {lang === 'id' ? p.solutionId : p.solutionEn}
@@ -89,7 +89,7 @@ export default function Services() {
 
                   <div className="mb-6">
                     <span className="text-xs font-mono uppercase tracking-wider text-slate-subtle block mb-3">
-                      {lang === 'id' ? "Output & Deliverables Teknis:" : "Deliverables & Scope:"}
+                      {lang === 'id' ? "Lingkup & Output Pengerjaan" : "Scope & Deliverables"}
                     </span>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {p.deliverables.map((item, dIdx) => (

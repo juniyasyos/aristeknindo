@@ -69,8 +69,8 @@ export default function Contact() {
               </h2>
               <p className="text-xs sm:text-sm text-slate-muted mb-8">
                 {lang === 'id'
-                  ? "Isi data kebutuhan pabrik Anda untuk penanganan cepat oleh engineer ATM:"
-                  : "Complete your plant requirements for fast evaluation by our engineers:"}
+                  ? "Lengkapi formulir di bawah ini agar tim teknis kami dapat meninjau spesifikasi dan memberikan penawaran harga resmi."
+                  : "Complete your plant requirements for fast evaluation and official quotation by our engineers."}
               </p>
 
               {submitted && (

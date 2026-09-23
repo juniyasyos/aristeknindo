@@ -51,7 +51,7 @@ export default function SplitStageSection() {
             <div className="inline-flex items-center gap-1.5 px-2 py-0.5 sm:px-3 sm:py-1 rounded-md bg-canvas-card border border-brand-red/30 mb-2 sm:mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
               <span className="font-mono text-[10px] sm:text-xs text-brand-redLight uppercase tracking-wider font-semibold">
-                {lang === 'id' ? "Spektrum Kapabilitas Rekayasa Terintegrasi" : "Integrated Engineering Capability Spectrum"}
+                {lang === 'id' ? "Layanan Rekayasa & Fabrikasi Terpadu" : "Integrated Engineering & Fabrication Capabilities"}
               </span>
             </div>
             <h2 className="text-lg sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white tracking-tight leading-snug sm:leading-tight">
@@ -102,7 +102,7 @@ export default function SplitStageSection() {
                       <Cpu className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </span>
                     <span className="font-mono text-[10px] sm:text-xs font-bold text-brand-redLight tracking-wider uppercase">
-                      STATION 01 // OTOMASI & KONTROL
+                      01 // OTOMASI & KONTROL PLC
                     </span>
                   </div>
                   <span className="font-mono text-[10px] sm:text-[11px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
@@ -175,7 +175,7 @@ export default function SplitStageSection() {
                       <Wrench className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </span>
                     <span className="font-mono text-[10px] sm:text-xs font-bold text-emerald-400 tracking-wider uppercase">
-                      STATION 02 // WORKSHOP MANDIRI
+                      02 // WORKSHOP MACHINING PRESISI
                     </span>
                   </div>
                   <span className="font-mono text-[10px] sm:text-[11px] px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-400 border border-emerald-800/50 font-bold">
@@ -254,7 +254,7 @@ export default function SplitStageSection() {
                       <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </span>
                     <span className="font-mono text-[10px] sm:text-xs font-bold text-amber-400 tracking-wider uppercase">
-                      STATION 03 // INFRASTRUKTUR DAYA
+                      03 // FABRIKASI & KELISTRIKAN PABRIK
                     </span>
                   </div>
                   <span className="font-mono text-[10px] sm:text-[11px] px-2 py-0.5 rounded bg-amber-950/60 text-amber-400 border border-amber-800/50 font-semibold">
@@ -346,7 +346,7 @@ export default function SplitStageSection() {
                       <Boxes className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </span>
                     <span className="font-mono text-[10px] sm:text-xs font-bold text-sky-400 tracking-wider uppercase">
-                      STATION 04 // SUPLAI KOMPONEN RESMI
+                      04 // PENGADAAN SUKU CADANG RESMI
                     </span>
                   </div>
                   <span className="font-mono text-[10px] sm:text-[11px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">

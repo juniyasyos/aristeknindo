@@ -3,23 +3,23 @@ const asset = (p) => `${BASE}/${p.replace(/^\//, '')}`;
 
 export const ABOUT_DATA = {
   header: {
-    badgeId: "PROFIL KORPORAT & KREDIBILITAS VENDOR",
+    badgeId: "PROFIL PERUSAHAAN & KUALIFIKASI VENDOR",
     badgeEn: "CORPORATE PROFILE & VENDOR QUALIFICATION",
-    titleId: "Dedikasi Presisi & Rekayasa Terpercaya untuk Kelancaran Industri Indonesia",
+    titleId: "Layanan Permesinan Presisi dan Kontraktor Otomasi untuk Industri Manufaktur",
     titleEn: "Engineering Precision & Trusted Industrial Contracting for Indonesian Manufacturing",
     descriptionId: "PT. Aris Teknindo Mandiri adalah kontraktor mekanikal-elektrikal, permesinan presisi, dan otomasi industri berbadan hukum resmi. Kami hadir sebagai mitra teknis terpercaya bagi pabrik manufaktur dan otomotif di kawasan industri Jawa Barat dan sekitarnya.",
     descriptionEn: "PT. Aris Teknindo Mandiri is an officially registered mechanical-electrical, precision machining, and industrial automation contractor, serving as a trusted technical partner for manufacturing and automotive plants across West Java and beyond."
   },
 
   narrative: {
-    tagId: "LATAR BELAKANG REKAYASA",
+    tagId: "LATAR BELAKANG PERUSAHAAN",
     tagEn: "ENGINEERING ROOTS",
-    headingId: "Solusi Nyata di Titik Pertemuan Antara Kekuatan Mekanikal dan Kecerdasan Otomasi",
-    headingEn: "Real Solutions at the Intersection of Mechanical Strength and Automation Intelligence",
-    p1Id: "Berakar di Bekasi, Jawa Barat—jantung kawasan manufaktur dan otomotif terbesar di Indonesia—PT. Aris Teknindo Mandiri didirikan untuk menjembatani kesenjangan yang sering dihadapi pabrik: kebutuhan akan mitra yang tidak hanya mengerti logika pemrograman kontrol kelistrikan, tetapi juga memiliki kemampuan manufaktur fisik untuk memproduksi komponen logam presisi di bengkel sendiri.",
-    p1En: "Rooted in Bekasi, West Java—the industrial heartland of Indonesia's manufacturing and automotive sectors—PT. Aris Teknindo Mandiri was established to bridge a common operational gap: the plant need for a partner who deeply understands electrical control programming logic while possessing direct in-house capabilities to fabricate high-precision metal parts.",
-    p2Id: "Pengalaman lapangan bertahun-tahun dalam menangani troubleshooting mesin pabrik membuktikan bahwa kami mampu menjawab dua kebutuhan kunci industri sekaligus: kekuatan fisik suku cadang logam (machining toleransi ketat) dan stabilitas logika kendali (otomasi PLC & sensor presisi). Portofolio kerja kami menjadi bukti nyata dedikasi dalam menghadirkan suku cadang tahan lama dan sistem otomasi yang andal.",
-    p2En: "Years of hands-on field experience resolving manufacturing line emergencies have proven our capability to deliver two core industrial demands simultaneously: high-tolerance metal spare parts and rock-solid automation logic. Our project history stands as tangible proof of our commitment to zero downtime and uncompromising engineering integrity."
+    headingId: "Integrasi Permesinan Presisi dan Kontrol Otomasi Pabrik",
+    headingEn: "Integrated Precision Machining and Industrial Automation Intelligence",
+    p1Id: "Berbasis di Bekasi, Jawa Barat, PT. Aris Teknindo Mandiri didirikan untuk menjawab kebutuhan nyata industri manufaktur dan otomotif. Kami memadukan keahlian pemrograman sistem kontrol PLC dengan kemampuan manufaktur fisik untuk memproduksi komponen logam presisi langsung di workshop sendiri.",
+    p1En: "Rooted in Bekasi, West Java, PT. Aris Teknindo Mandiri was established to meet the practical demands of manufacturing and automotive plants: delivering both robust electrical control programming and direct in-house precision machining.",
+    p2Id: "Pengalaman lapangan bertahun-tahun dalam menangani perbaikan mesin produksi membuktikan keandalan tim kami dalam dua bidang utama, yaitu pembuatan suku cadang bertoleransi ketat serta stabilitas sistem kendali otomasi PLC. Seluruh pekerjaan dirancang untuk memastikan mesin beroperasi normal dengan durabilitas tinggi.",
+    p2En: "Years of field experience resolving manufacturing line issues prove our strength in two core areas: high-tolerance metal spare parts and rock-solid PLC automation logic, ensuring uninterrupted production cycles."
   },
 
   visionMission: {
@@ -32,21 +32,21 @@ export const ABOUT_DATA = {
     missions: [
       {
         number: "01",
-        titleId: "Presisi Tanpa Kompromi (Precision First)",
+        titleId: "Standar Presisi Tinggi",
         titleEn: "Precision First Engineering",
         descId: "Memproduksi komponen permesinan (machining) dan fabrikasi dengan toleransi ukuran yang ketat sesuai spesifikasi gambar teknik (CAD drawing) guna menjamin durabilitas dan kecocokan sempurna di mesin pabrik.",
         descEn: "Fabricating precision-turned parts and structures within strict micrometer tolerances according to CAD drawings, guaranteeing maximum durability and seamless fit in factory lines."
       },
       {
         number: "02",
-        titleId: "Keandalan Lini Pabrik (Zero Downtime Orientation)",
-        titleEn: "Zero Downtime Orientation",
+        titleId: "Keandalan Lini Produksi",
+        titleEn: "Production Line Reliability",
         descId: "Menyediakan jasa instalasi kelistrikan berstandar keselamatan tinggi, pemrograman PLC yang teruji, serta layanan tanggap darurat on-call guna meminimalisasi waktu henti mesin klien.",
         descEn: "Delivering code-compliant electrical installations, robust PLC programming sequences, and rapid on-call emergency troubleshooting to minimize costly plant downtime."
       },
       {
         number: "03",
-        titleId: "Integritas Rantai Pasok (Authentic Supply Chain)",
+        titleId: "Keaslian Rantai Pasok",
         titleEn: "Authentic Supply Chain Integrity",
         descId: "Menyediakan pengadaan suku cadang otomasi dan mekanikal impor berkualitas tinggi dari 29+ prinsipal global terverifikasi dengan kepastian spesifikasi, orisinalitas, dan harga transparan.",
         descEn: "Securing tier-1 global industrial automation and mechanical spare parts from 29+ verified manufacturers with strict authenticity guarantees and honest commercial transparency."

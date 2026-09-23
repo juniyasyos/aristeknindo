@@ -243,8 +243,8 @@ export default function About() {
             </h2>
             <p className="text-sm text-slate-muted">
               {lang === 'id'
-                ? "Bukan nilai klise, melainkan komitmen operasional nyata yang kami terapkan di workshop dan di lapangan:"
-                : "Actionable engineering commitments upheld in our workshop and on client plant floors:"}
+                ? "Prinsip kerja profesional yang kami terapkan secara konsisten di workshop dan di lapangan."
+                : "Operational engineering standards upheld across our workshop and on client plant floors."}
             </p>
           </div>
 

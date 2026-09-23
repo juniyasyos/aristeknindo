@@ -22,8 +22,8 @@ export default function Projects() {
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-6">
             {lang === 'id'
-              ? "Studi Kasus Teknis: Pekerjaan Nyata di Lini Industri Manufaktur & Otomotif"
-              : "Technical Case Studies: Proven Results Across Automotive & Industrial Plants"}
+              ? "Dokumentasi Studi Kasus Teknis di Lini Manufaktur & Otomotif"
+              : "Documented Engineering Case Studies in Manufacturing & Automotive"}
           </h1>
           <p className="text-base sm:text-lg text-slate-muted max-w-3xl mx-auto leading-relaxed">
             {lang === 'id'
@@ -66,7 +66,7 @@ export default function Projects() {
                   <div className="space-y-4 mb-6">
                     <div className="p-4 rounded-xl bg-canvas-subtle/80 border border-slate-border/60">
                       <span className="text-xs font-mono text-slate-subtle uppercase tracking-wider block mb-1">
-                        {lang === 'id' ? "Lingkup Pekerjaan & Tindakan Teknis:" : "Scope & Engineering Actions:"}
+                        {lang === 'id' ? "Lingkup Pekerjaan & Tindakan Teknis" : "Scope & Engineering Actions"}
                       </span>
                       <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                         {lang === 'id' ? cs.scopeId : cs.scopeEn}
@@ -75,7 +75,7 @@ export default function Projects() {
 
                     <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/20">
                       <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider block mb-1">
-                        {lang === 'id' ? "Dampak di Lini Pabrik:" : "Plant Operational Impact:"}
+                        {lang === 'id' ? "Dampak di Lini Pabrik" : "Plant Operational Impact"}
                       </span>
                       <p className="text-xs sm:text-sm text-emerald-200 leading-relaxed">
                         {lang === 'id' ? cs.impactId : cs.impactEn}
@@ -85,7 +85,7 @@ export default function Projects() {
 
                   <div className="mb-6">
                     <span className="text-xs font-mono text-slate-subtle block mb-2">
-                      Hardware & Platform Terkait:
+                      Hardware & Platform Terkait
                     </span>
                     <div className="flex flex-wrap gap-2">
                       {cs.brandsInvolved.map((b, bIdx) => (

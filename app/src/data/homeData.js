@@ -25,13 +25,13 @@ export const HOME_DATA = {
   brandsTicker: {
     headingId: "Akses Suplai Komponen Standar Industri dari Prinsipal Terkemuka Dunia",
     headingEn: "Direct Industrial Supply Access from Verified Global Principals",
-    subheadingId: "Kami menyuplai komponen otomasi, sensor, bearing presisi, dan linear motion dari 29+ merek terpercaya:",
-    subheadingEn: "Supplying genuine automation parts, sensors, precision bearings, and linear motion from 29+ world-class brands:"
+    subheadingId: "Kami menyuplai komponen otomasi, sensor, bearing presisi, dan linear motion dari 29+ merek industri terkemuka dunia.",
+    subheadingEn: "Supplying genuine automation parts, sensors, precision bearings, and linear motion from 29+ world-class brands."
   },
 
   pillarsSection: {
-    tagId: "PANGGUNG KAPABILITAS REKAYASA",
-    tagEn: "ENGINEERING CAPABILITY STAGE",
+    tagId: "KAPABILITAS REKAYASA TEKNIS",
+    tagEn: "TECHNICAL CAPABILITIES",
     headingId: "Solusi Terintegrasi Kebutuhan Lini Produksi Pabrik",
     headingEn: "Integrated Engineering Solutions for Plant Operations",
     subheadingId: "Pilih kapabilitas di sebelah kiri untuk melihat detail masalah, metode pengerjaan, dan output teknis kami.",
@@ -167,10 +167,10 @@ export const HOME_DATA = {
         solutionId: "Akses rantai pasok langsung untuk komponen elektrik, kontrol, sensor, bearing, dan linear motion dari 29 merek terkemuka dunia dengan garansi keaslian spesifikasi.",
         solutionEn: "Direct supply chain network for electrical automation, sensors, precision bearings, and linear motion hardware from 29 verified global brands with guaranteed authenticity.",
         deliverables: [
-          { id: "Automation: Mitsubishi Electric, Yaskawa, Autonics, Cognex, Fuji", en: "Automation: Mitsubishi Electric, Yaskawa, Autonics, Cognex, Fuji" },
-          { id: "Sensors & Pneumatics: Panasonic SUNX, Koganei, Seametrics, Casix", en: "Sensors & Pneumatics: Panasonic SUNX, Koganei, Seametrics, Casix" },
-          { id: "Linear Motion & Guides: THK, HIWIN, Samick, Hanshin", en: "Linear Motion & Guides: THK, HIWIN, Samick, Hanshin" },
-          { id: "Bearings & Power Transmission: NSK, NTN, Koyo, Timken, FAG, Tsubaki", en: "Bearings & Transmission: NSK, NTN, Koyo, Timken, FAG, Tsubaki" }
+          { id: "Komponen Otomasi (Mitsubishi Electric, Yaskawa, Autonics, Cognex, Fuji)", en: "Automation Components (Mitsubishi Electric, Yaskawa, Autonics, Cognex, Fuji)" },
+          { id: "Sensor & Pneumatik (Panasonic SUNX, Koganei, Seametrics, Casix)", en: "Sensors & Pneumatics (Panasonic SUNX, Koganei, Seametrics, Casix)" },
+          { id: "Linear Motion & Guideway (THK, HIWIN, Samick, Hanshin)", en: "Linear Motion & Guideways (THK, HIWIN, Samick, Hanshin)" },
+          { id: "Bearing & Transmisi Daya (NSK, NTN, Koyo, Timken, FAG, Tsubaki)", en: "Bearings & Power Transmission (NSK, NTN, Koyo, Timken, FAG, Tsubaki)" }
         ],
         brandsCovered: ["THK", "NSK", "Timken", "Autonics", "Mitsubishi", "Yaskawa", "HIWIN", "NTN", "Cognex"],
         actionLabelId: "Kirim Part Number untuk Cek Stok",
@@ -195,8 +195,8 @@ export const HOME_DATA = {
   workshopSection: {
     tagId: "BUKTI KAPASITAS FISIK",
     tagEn: "IN-HOUSE PHYSICAL CAPABILITIES",
-    headingId: "Dikerjakan di Fasilitas Mandiri, Bukan Dilempar ke Pihak Ketiga",
-    headingEn: "Executed in Our Own Workshop, Not Brokered to Third Parties",
+    headingId: "Dikerjakan Langsung di Workshop Mandiri Babelan Tanpa Pihak Ketiga",
+    headingEn: "Executed Directly in Our Babelan Workshop Without Third Parties",
     subheadingId: "Workshop teknis kami di Babelan, Bekasi dilengkapi mesin konvensional dan CNC untuk menjamin toleransi presisi dan kepastian jadwal pengiriman.",
     subheadingEn: "Our dedicated technical workshop in Babelan, Bekasi is equipped with conventional and CNC machinery, guaranteeing precision tolerances and delivery certainty.",
     facilities: [
@@ -278,10 +278,10 @@ export const HOME_DATA = {
   caseStudiesSection: {
     tagId: "REKAM JEJAK PEKERJAAN",
     tagEn: "DOCUMENTED FIELD TRACK RECORD",
-    headingId: "Bukti Rekayasa di Lapangan: Proyek Riil yang Telah Kami Tangani",
-    headingEn: "Engineering in Action: Documented Field Projects Delivered",
-    subheadingId: "Bukan sekadar klaim pemasaran, berikut dokumentasi pekerjaan teknis langsung yang teruji di lini industri manufaktur dan otomotif:",
-    subheadingEn: "Concrete technical execution verified across automotive and industrial production lines:",
+    headingId: "Dokumentasi Proyek Lapangan yang Telah Kami Tangani",
+    headingEn: "Documented Field Projects Delivered for Manufacturing Clients",
+    subheadingId: "Dokumentasi pekerjaan teknis langsung yang telah teruji di lini industri manufaktur dan perakitan otomotif.",
+    subheadingEn: "Concrete technical execution verified across automotive and industrial production lines.",
     cases: [
       {
         id: "weighing-system",
@@ -351,8 +351,8 @@ export const HOME_DATA = {
     tagEn: "TRANSPARENT WORKFLOW",
     headingId: "Alur Kerja Sama Rekayasa dengan Pabrik Anda",
     headingEn: "How Plant Engineers & Procurement Partner with ATM",
-    subheadingId: "Dari telaah gambar teknik hingga mesin running di lini pabrik, kami bekerja dengan tahapan terukur:",
-    subheadingEn: "From initial technical drawing review to live line commissioning, our transparent 5-step process ensures certainty:",
+    subheadingId: "Dari telaah gambar teknik hingga mesin beroperasi di lini pabrik, seluruh pekerjaan dijalankan dengan tahapan terukur.",
+    subheadingEn: "From initial technical drawing review to live line commissioning, our transparent 5-step process ensures certainty.",
     steps: [
       {
         step: "01",
@@ -397,7 +397,7 @@ export const HOME_DATA = {
     headingEn: "Have an Engineering Part Drawing to Machine, or a Critical PLC Automation Challenge?",
     subheadingId: "Tim teknis PT. Aris Teknindo Mandiri siap menelaah drawing CAD Anda atau berkunjung ke pabrik untuk survei kebutuhan instalasi kelistrikan & mekanikal.",
     subheadingEn: "Our engineering team is ready to evaluate your CAD blueprints or deploy on-site to inspect your plant's electrical, automation, or mechanical needs.",
-    phoneLabel: "Hotline Langsung Tim Teknis (Fast Response):",
+    phoneLabel: "Hotline Tim Teknis Respons Cepat",
     addressLabel: "Workshop & Kantor: Perum Pondok Permata C17/46, Babelan, Bekasi"
   }
 };

@@ -45,7 +45,7 @@ export default function Footer() {
               <li>
                 <Link to="/about" className="hover:text-white hover:underline transition-colors flex items-center gap-1.5">
                   <ArrowUpRight className="w-3.5 h-3.5 text-brand-red" />
-                  <span>{t("Profil & Komitmen Pimpinan", "Company Profile & Leadership")}</span>
+                  <span>{t("Profil Perusahaan & Legalitas", "Company Profile & Legal Verification")}</span>
                 </Link>
               </li>
               <li>
@@ -82,7 +82,7 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               <p className="text-xs text-slate-subtle">
-                {t("Pengadaan suku cadang impor standar internasional:", "International standard industrial spare parts supply:")}
+                {t("Pengadaan suku cadang impor standar internasional", "International standard industrial spare parts supply")}
               </p>
               <div className="flex flex-wrap gap-1.5 text-[11px] font-mono">
                 {["Mitsubishi", "Yaskawa", "THK", "HIWIN", "NSK", "Timken", "Tsubaki", "Cognex", "Autonics", "Fuji Electric"].map(brand => (

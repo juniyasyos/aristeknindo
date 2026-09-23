@@ -36,7 +36,7 @@ export default function SplitStageSection() {
       navDescEn: "Outdated panel failure & 3-month OEM lead time",
       
       // Problem Column (Bottleneck)
-      problemBadgeId: "SITUASI KRITIS DI PABRIK KLIEN",
+      problemBadgeId: "KENDALA OPERASIONAL LAPANGAN",
       problemBadgeEn: "PLANT OPERATIONAL BOTTLENECK",
       problemTitleId: "Lini Produksi Stop Karena Modul PLC Lama Rusak & Supplier Luar Negeri Inden 3 Bulan",
       problemTitleEn: "Production Line Halted Due to Outdated PLC Failure with 3-Month Overseas Lead Time",
@@ -54,7 +54,7 @@ export default function SplitStageSection() {
       ],
 
       // Solution Column (ATM Breakthrough)
-      solutionBadgeId: "TEROBOSAN REKAYASA TEKNIS ATM",
+      solutionBadgeId: "SOLUSI TEKNIS ATM",
       solutionBadgeEn: "ATM ENGINEERING BREAKTHROUGH",
       solutionTitleId: "Retrofit PLC Modern Multi-Brand & Commissioning Start-Up dalam 7 Hari Kerja",
       solutionTitleEn: "Multi-Brand Modern PLC Retrofit & On-Site Commissioning Within 7 Working Days",
@@ -91,7 +91,7 @@ export default function SplitStageSection() {
       navDescId: "Reverse engineering presisi toleransi ±0.01 mm",
       navDescEn: "Precision reverse engineering to ±0.01 mm",
 
-      problemBadgeId: "SITUASI KRITIS DI PABRIK KLIEN",
+      problemBadgeId: "KENDALA OPERASIONAL LAPANGAN",
       problemBadgeEn: "PLANT OPERATIONAL BOTTLENECK",
       problemTitleId: "Spare Part Shaft / Gear Patah Mendadak & Tidak Memiliki Gambar Teknik CAD Asli",
       problemTitleEn: "Machine Shaft / Gear Broken with Zero Original CAD Drawings Available",
@@ -108,7 +108,7 @@ export default function SplitStageSection() {
         "Prohibitive OEM replacement cost with minimum orders"
       ],
 
-      solutionBadgeId: "TEROBOSAN REKAYASA TEKNIS ATM",
+      solutionBadgeId: "SOLUSI TEKNIS ATM",
       solutionBadgeEn: "ATM ENGINEERING BREAKTHROUGH",
       solutionTitleId: "Reverse Engineering Fisik & Pengerjaan di Workshop Babelan (Toleransi ±0.01 mm)",
       solutionTitleEn: "Physical Reverse Engineering & In-House Machining (Tolerance ±0.01 mm)",
@@ -145,7 +145,7 @@ export default function SplitStageSection() {
       navDescId: "Penataan cable tray galvanis standar audit pabrik",
       navDescEn: "Galvanized cable tray routing for HSE audit",
 
-      problemBadgeId: "SITUASI KRITIS DI PABRIK KLIEN",
+      problemBadgeId: "KENDALA OPERASIONAL LAPANGAN",
       problemBadgeEn: "PLANT OPERATIONAL BOTTLENECK",
       problemTitleId: "Kabel Mesin Berantakan di Lantai, Rawan Korsleting & Gagal Lolos Audit K3 Pabrik",
       problemTitleEn: "Machine Cables Exposed on Plant Floor, High Short-Circuit Risk & HSE Audit Failure",
@@ -162,7 +162,7 @@ export default function SplitStageSection() {
         "Non-compliance flags during plant occupational safety audits"
       ],
 
-      solutionBadgeId: "TEROBOSAN REKAYASA TEKNIS ATM",
+      solutionBadgeId: "SOLUSI TEKNIS ATM",
       solutionBadgeEn: "ATM ENGINEERING BREAKTHROUGH",
       solutionTitleId: "Instalasi Cable Tray Hot-Dip Galvanized & Pemisahan Jalur Tegangan K3",
       solutionTitleEn: "Hot-Dip Galvanized Cable Tray Installation & Strict Power-Signal Separation",
@@ -199,7 +199,7 @@ export default function SplitStageSection() {
       navDescId: "Jaminan 100% original dari 29+ brand dunia",
       navDescEn: "100% genuine guaranteed from 29+ brands",
 
-      problemBadgeId: "SITUASI KRITIS DI PABRIK KLIEN",
+      problemBadgeId: "KENDALA OPERASIONAL LAPANGAN",
       problemBadgeEn: "PLANT OPERATIONAL BOTTLENECK",
       problemTitleId: "Kekhawatiran Barang Tiruan / Rekondisi yang Merusak Mesin Bernilai Miliaran",
       problemTitleEn: "Severe Threat of Counterfeit or Refurbished Parts Damaging High-Value Production Lines",
@@ -216,7 +216,7 @@ export default function SplitStageSection() {
         "Struggles finding exact genuine factory part numbers"
       ],
 
-      solutionBadgeId: "TEROBOSAN REKAYASA TEKNIS ATM",
+      solutionBadgeId: "SOLUSI TEKNIS ATM",
       solutionBadgeEn: "ATM ENGINEERING BREAKTHROUGH",
       solutionTitleId: "Akses Suplai Resmi 29+ Brand Terkemuka Dunia dengan Garansi Keaslian 100%",
       solutionTitleEn: "Direct Supply Access from 29+ Global Tier-1 Brands with 100% Authenticity Guarantee",
@@ -271,8 +271,8 @@ export default function SplitStageSection() {
           </div>
           <p className="text-xs sm:text-sm text-slate-300 max-w-lg leading-relaxed">
             {lang === 'id'
-              ? "Kami tidak hanya menyediakan suku cadang, tetapi menyelesaikan bottleneck manufaktur nyata: dari mesin stop karena modul obsolete, hingga pembuatan part presisi tanpa drawing asli."
-              : "We don't just sell components; we eliminate critical manufacturing bottlenecks: from downtime due to obsolete PLCs to machining precision parts without original drawings."}
+              ? "Kami menyelesaikan kendala manufaktur secara langsung di lapangan, mulai dari mesin terhenti akibat kontrol usang hingga pembuatan suku cadang presisi tanpa drawing asli."
+              : "We resolve practical manufacturing bottlenecks on the factory floor, from downtime due to obsolete controllers to precision machining without original drawings."}
           </p>
         </div>
 
