@@ -19,8 +19,7 @@ export const ABOUT_DATA = {
     p1Id: "Berakar di Bekasi, Jawa Barat—jantung kawasan manufaktur dan otomotif terbesar di Indonesia—PT. Aris Teknindo Mandiri didirikan untuk menjembatani kesenjangan yang sering dihadapi pabrik: kebutuhan akan mitra yang tidak hanya mengerti logika pemrograman kontrol kelistrikan, tetapi juga memiliki kemampuan manufaktur fisik untuk memproduksi komponen logam presisi di bengkel sendiri.",
     p1En: "Rooted in Bekasi, West Java—the industrial heartland of Indonesia's manufacturing and automotive sectors—PT. Aris Teknindo Mandiri was established to bridge a common operational gap: the plant need for a partner who deeply understands electrical control programming logic while possessing direct in-house capabilities to fabricate high-precision metal parts.",
     p2Id: "Pengalaman lapangan bertahun-tahun dalam menangani troubleshooting mesin pabrik membuktikan bahwa kami mampu menjawab dua kebutuhan kunci industri sekaligus: kekuatan fisik suku cadang logam (machining toleransi ketat) dan stabilitas logika kendali (otomasi PLC & sensor presisi). Portofolio kerja kami menjadi bukti nyata dedikasi dalam menghadirkan suku cadang tahan lama dan sistem otomasi yang andal.",
-    p2En: "Years of hands-on field experience resolving manufacturing line emergencies have proven our capability to deliver two core industrial demands simultaneously: high-tolerance metal spare parts and rock-solid automation logic. Our project history stands as tangible proof of our commitment to zero downtime and uncompromising engineering integrity.",
-    image: asset('/images/hero-industrial.jpg')
+    p2En: "Years of hands-on field experience resolving manufacturing line emergencies have proven our capability to deliver two core industrial demands simultaneously: high-tolerance metal spare parts and rock-solid automation logic. Our project history stands as tangible proof of our commitment to zero downtime and uncompromising engineering integrity."
   },
 
   visionMission: {
@@ -53,20 +52,6 @@ export const ABOUT_DATA = {
         descEn: "Securing tier-1 global industrial automation and mechanical spare parts from 29+ verified manufacturers with strict authenticity guarantees and honest commercial transparency."
       }
     ]
-  },
-
-  directorStatement: {
-    tagId: "KOMITMEN MANAJEMEN",
-    tagEn: "EXECUTIVE COMMITMENT",
-    headingId: "Kepercayaan Anda Adalah Tanggung Jawab Tertinggi Kami",
-    headingEn: "Your Production Reliability is Our Highest Responsibility",
-    quoteId: "Bagi kami di PT. Aris Teknindo Mandiri, bisnis rekayasa industri adalah bisnis kepercayaan jangka panjang. Ketika sebuah pabrik menghubungi kami—baik untuk membubut satu poros darurat, menarik ratusan meter kabel tray, hingga merancang sistem otomasi PLC terpadu—kami sadar bahwa kelancaran produksi dan keselamatan kerja mereka ada di tangan kami. Oleh karena itu, kami tidak pernah mengambil jalan pintas. Setiap milimeter toleransi logam kami ukur dengan teliti, setiap baris kode PLC kami uji fungsionalitasnya, dan setiap janji tenggat waktu kami pegang teguh.",
-    quoteEn: "At PT. Aris Teknindo Mandiri, industrial engineering is fundamentally a business of long-term trust. When a manufacturing plant calls upon us—whether to turn an emergency shaft, route industrial cable trays, or build a complete automated PLC system—we understand that their production schedule and operational safety depend on our execution. We never take shortcuts. Every millimeter of tolerance is verified, every rung of PLC code is simulated, and every committed deadline is rigorously honored.",
-    signerTitleId: "Direksi PT. Aris Teknindo Mandiri",
-    signerTitleEn: "Board of Directors, PT. Aris Teknindo Mandiri",
-    signerLocId: "Bekasi, Jawa Barat",
-    signerLocEn: "Bekasi, West Java",
-    image: asset('/images/founder-portrait.jpg')
   },
 
   coreValues: [

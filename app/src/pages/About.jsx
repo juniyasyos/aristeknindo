@@ -8,7 +8,6 @@ import {
   CheckCircle2, 
   Target, 
   Compass, 
-  Quote, 
   ShieldCheck, 
   Cpu, 
   Clock, 
@@ -19,6 +18,7 @@ import {
   MapPin,
   FileCheck
 } from 'lucide-react';
+import { asset } from '../utils/asset';
 
 export default function About() {
   const { lang } = useLanguage();
@@ -49,49 +49,123 @@ export default function About() {
         </div>
       </section>
 
-      {/* 2. Narrative & Engineering Roots */}
-      <section className="py-16 lg:py-20 border-b border-slate-border/60">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      {/* 2. Narrative & Engineering Roots (Hero-style Industrial Background) */}
+      <section className="relative py-16 lg:py-24 border-b border-slate-border/60 overflow-hidden bg-canvas">
+        {/* Background Image: Full section industrial visual reference from Hero */}
+        <div className="absolute inset-0 z-0 pointer-events-none select-none">
+          <img
+            src={asset('/images/bg-hero-section.png')}
+            alt="Industrial Automation Background"
+            className="w-full h-full object-cover object-right opacity-25 lg:opacity-35"
+          />
+          {/* Dark Gradient Overlay for Maximum Text Legibility and Depth */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F17] via-[#0B0F17]/95 sm:via-[#0B0F17]/90 to-[#0B0F17]/65" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-transparent to-[#0B0F17]/60" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             
+            {/* Left Column: Narrative Story (7 cols) */}
             <div className="lg:col-span-7">
-              <span className="text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
-                {lang === 'id' ? data.narrative.tagId : data.narrative.tagEn}
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mt-2 mb-6 leading-snug">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-red/15 border border-brand-red/35 mb-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
+                <span className="text-xs font-mono font-semibold text-brand-redLight tracking-widest uppercase">
+                  {lang === 'id' ? data.narrative.tagId : data.narrative.tagEn}
+                </span>
+              </div>
+
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mt-1 mb-6 leading-snug tracking-tight">
                 {lang === 'id' ? data.narrative.headingId : data.narrative.headingEn}
               </h2>
-              <div className="space-y-4 text-sm sm:text-base text-slate-muted leading-relaxed">
+
+              <div className="space-y-4 text-sm sm:text-base text-slate-300 leading-relaxed">
                 <p>{lang === 'id' ? data.narrative.p1Id : data.narrative.p1En}</p>
                 <p>{lang === 'id' ? data.narrative.p2Id : data.narrative.p2En}</p>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-slate-border/50 grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div>
-                  <span className="text-xs text-slate-subtle block mb-1">Badan Hukum</span>
-                  <span className="text-sm font-mono font-bold text-white">PT Resmi</span>
+              <div className="mt-8 pt-6 border-t border-slate-border/70 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+                <div className="p-3 sm:p-3.5 rounded-xl bg-canvas-card/70 border border-slate-border/70 backdrop-blur-md">
+                  <span className="text-xs text-slate-400 block mb-1 font-mono">Badan Hukum</span>
+                  <span className="text-sm font-mono font-bold text-white">PT Resmi Terdaftar</span>
                 </div>
-                <div>
-                  <span className="text-xs text-slate-subtle block mb-1">Nomor Registrasi</span>
+                <div className="p-3 sm:p-3.5 rounded-xl bg-canvas-card/70 border border-slate-border/70 backdrop-blur-md">
+                  <span className="text-xs text-slate-400 block mb-1 font-mono">Nomor Registrasi</span>
                   <span className="text-sm font-mono font-bold text-emerald-400">1280189</span>
                 </div>
-                <div>
-                  <span className="text-xs text-slate-subtle block mb-1">Lokasi Workshop</span>
+                <div className="p-3 sm:p-3.5 rounded-xl bg-canvas-card/70 border border-slate-border/70 backdrop-blur-md col-span-2 sm:col-span-1">
+                  <span className="text-xs text-slate-400 block mb-1 font-mono">Lokasi Workshop</span>
                   <span className="text-sm font-mono font-bold text-white">Babelan, Bekasi</span>
                 </div>
               </div>
             </div>
 
+            {/* Right Column: High-tech Engineering Credential Panel (5 cols) */}
             <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border border-slate-border bg-canvas-card shadow-2xl relative group">
-                <img
-                  src={data.narrative.image}
-                  alt="ATM Engineering Roots"
-                  className="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="p-4 bg-canvas-card border-t border-slate-border/70 flex items-center justify-between text-xs">
-                  <span className="text-slate-300 font-mono">Fasilitas Workshop Babelan</span>
-                  <span className="text-emerald-400 font-mono">Operasional Mandiri</span>
+              <div className="rounded-2xl border border-slate-border/80 bg-canvas-card/90 backdrop-blur-md p-6 sm:p-7 shadow-2xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-brand-red/10 rounded-full blur-[70px] pointer-events-none" />
+                
+                <div className="flex items-center justify-between gap-2 border-b border-slate-border/70 pb-4 mb-5">
+                  <div className="flex items-center gap-2">
+                    <span className="p-1.5 rounded-lg bg-brand-red/20 text-brand-red border border-brand-red/30">
+                      <Building2 className="w-4 h-4" />
+                    </span>
+                    <span className="font-mono text-xs font-bold text-white uppercase tracking-wider">
+                      {lang === 'id' ? "Infrastruktur Rekayasa" : "Engineering Infrastructure"}
+                    </span>
+                  </div>
+                  <span className="font-mono text-[11px] px-2 py-0.5 rounded bg-emerald-950/70 text-emerald-400 border border-emerald-800/60 font-semibold">
+                    100% In-House
+                  </span>
+                </div>
+
+                <div className="space-y-3.5">
+                  <div className="flex items-start gap-3 p-3 rounded-xl bg-canvas-subtle/60 border border-slate-border/50">
+                    <Wrench className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="text-xs sm:text-sm font-bold text-white">
+                        {lang === 'id' ? "Workshop Machining Mandiri" : "Self-Operated Machining Workshop"}
+                      </h4>
+                      <p className="text-xs text-slate-300 mt-0.5 leading-snug">
+                        {lang === 'id' 
+                          ? "Mesin Bubut, Milling, dan CNC presisi hingga ±0.01 mm di Babelan, Bekasi." 
+                          : "Lathe, Milling, and CNC precision machining up to ±0.01 mm in Babelan, Bekasi."}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 p-3 rounded-xl bg-canvas-subtle/60 border border-slate-border/50">
+                    <Cpu className="w-4 h-4 text-brand-red flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="text-xs sm:text-sm font-bold text-white">
+                        {lang === 'id' ? "Kontrol Otomasi & PLC Teruji" : "Proven Automation & PLC Engineering"}
+                      </h4>
+                      <p className="text-xs text-slate-300 mt-0.5 leading-snug">
+                        {lang === 'id'
+                          ? "Pemrograman multi-brand: Mitsubishi, Omron, Allen-Bradley, Yaskawa & HMI SCADA."
+                          : "Multi-brand programming: Mitsubishi, Omron, Allen-Bradley, Yaskawa & HMI SCADA."}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 p-3 rounded-xl bg-canvas-subtle/60 border border-slate-border/50">
+                    <ShieldCheck className="w-4 h-4 text-sky-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="text-xs sm:text-sm font-bold text-white">
+                        {lang === 'id' ? "Kepatuhan K3 & Standar Pabrik" : "HSE Compliance & Plant Safety"}
+                      </h4>
+                      <p className="text-xs text-slate-300 mt-0.5 leading-snug">
+                        {lang === 'id'
+                          ? "Instalasi jalur kabel daya berstandar audit industri manufaktur dan otomotif."
+                          : "Power cable routing installations meeting strict manufacturing HSE audit codes."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-5 pt-4 border-t border-slate-border/70 flex items-center justify-between text-[11px] font-mono text-slate-400">
+                  <span>Kawasan Industri Jawa Barat</span>
+                  <span className="text-brand-redLight font-semibold">Siaga Darurat On-Call</span>
                 </div>
               </div>
             </div>
@@ -154,62 +228,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* 4. Director's Statement (Wibawa & Tanggung Jawab) */}
-      <section className="py-16 lg:py-24 border-b border-slate-border/60 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            {/* Director Portrait (5 cols) */}
-            <div className="lg:col-span-5 flex flex-col items-center sm:items-start">
-              <div className="relative rounded-2xl overflow-hidden border border-slate-border bg-canvas-card shadow-2xl w-full max-w-sm">
-                <img
-                  src={data.directorStatement.image}
-                  alt="Direktur Utama PT. Aris Teknindo Mandiri"
-                  className="w-full h-[420px] object-cover object-top"
-                />
-                <div className="p-4 bg-canvas-card/95 border-t border-slate-border/80">
-                  <span className="text-xs font-mono uppercase text-brand-red font-semibold block">
-                    {lang === 'id' ? data.directorStatement.signerTitleId : data.directorStatement.signerTitleEn}
-                  </span>
-                  <span className="text-xs text-slate-muted">
-                    {SITE.name} — {lang === 'id' ? data.directorStatement.signerLocId : data.directorStatement.signerLocEn}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Quote & Commitment (7 cols) */}
-            <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 text-xs font-mono text-brand-red uppercase tracking-wider mb-3">
-                <Quote className="w-4 h-4" />
-                <span>{lang === 'id' ? data.directorStatement.tagId : data.directorStatement.tagEn}</span>
-              </div>
-              
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 leading-snug">
-                {lang === 'id' ? data.directorStatement.headingId : data.directorStatement.headingEn}
-              </h2>
-
-              <div className="relative pl-6 border-l-2 border-brand-red mb-8">
-                <p className="text-base sm:text-lg text-slate-200 leading-relaxed italic">
-                  "{lang === 'id' ? data.directorStatement.quoteId : data.directorStatement.quoteEn}"
-                </p>
-              </div>
-
-              <div className="pt-4 border-t border-slate-border/50">
-                <p className="text-sm font-bold text-white">
-                  {lang === 'id' ? data.directorStatement.signerTitleId : data.directorStatement.signerTitleEn}
-                </p>
-                <p className="text-xs text-slate-muted">
-                  PT. Aris Teknindo Mandiri (Reg. No. 1280189)
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* 5. 4 Core Engineering Values */}
+      {/* 4. 4 Core Engineering Values */}
       <section className="py-16 lg:py-20 bg-canvas-subtle/30 border-b border-slate-border/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
@@ -254,7 +273,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* 6. Legalitas & Kepatuhan Badan Hukum */}
+      {/* 5. Legalitas & Kepatuhan Badan Hukum */}
       <section className="py-16 lg:py-20 border-b border-slate-border/60">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
@@ -293,7 +312,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* 7. Vendor Verification CTA */}
+      {/* 6. Vendor Verification CTA */}
       <section className="py-16 lg:py-20 bg-gradient-to-b from-canvas to-canvas-card">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           
