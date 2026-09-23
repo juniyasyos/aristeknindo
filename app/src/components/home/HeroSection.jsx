@@ -21,10 +21,11 @@ export default function HeroSection() {
           transition={{ duration: 1.4, ease: "easeOut" }}
           src={asset('/images/bg-hero-section.png')}
           alt="Industrial Automation and Machining Background"
-          className="w-full h-full object-cover object-center lg:object-right select-none pointer-events-none"
+          className="w-full h-full object-cover select-none pointer-events-none origin-right"
+          style={{ objectPosition: '100% center' }}
         />
         {/* Dark Gradient Overlay for Maximum Text Legibility */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F17] via-[#0B0F17]/95 sm:via-[#0B0F17]/90 to-[#0B0F17]/70 sm:to-transparent lg:w-3/4" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F17] via-[#0B0F17]/85 to-[#0B0F17]/25 sm:via-[#0B0F17]/90 sm:to-transparent lg:w-3/4" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-transparent to-[#0B0F17]/50" />
       </div>
 
