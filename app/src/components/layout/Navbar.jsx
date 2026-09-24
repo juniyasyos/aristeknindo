@@ -37,8 +37,11 @@ export default function Navbar() {
           {/* Brand Logo */}
           <Link to="/" className="flex items-center group">
             <img
-              src={asset('/images/logo-dark-mode.png')}
+              src={asset('/images/logo-dark-mode.webp')}
               alt="PT. Aris Teknindo Mandiri"
+              width="160"
+              height="40"
+              decoding="async"
               className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
             />
           </Link>

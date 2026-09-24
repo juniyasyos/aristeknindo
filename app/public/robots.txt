@@ -1,5 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://sahabatwisatajember.com/sitemap.xml
+# Disallow internal backend endpoints & logs
+Disallow: /api/
+Disallow: /data/
+
+# Official Sitemap
+Sitemap: https://aristeknindomandiri.com/sitemap.xml

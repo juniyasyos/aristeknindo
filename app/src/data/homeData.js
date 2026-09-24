@@ -19,7 +19,7 @@ export const HOME_DATA = {
       { value: "0-Inden", labelId: "Alternatif Cepat Tanpa Inden Luar Negeri", labelEn: "Rapid In-House Machining" },
       { value: "Bekasi", labelId: "Akses Cikarang & Karawang", labelEn: "Cikarang & Karawang Hub" }
     ],
-    image: asset("/images/hero-industrial.jpg")
+    image: asset("/images/hero-industrial.webp")
   },
 
   brandsTicker: {

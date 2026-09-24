@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:php": "vite build",
+    "serve:php": "php -S 0.0.0.0:8000 router.php",
     "preview": "vite preview",
-    "deploy": "vite build && touch dist/.nojekyll && node ../scripts/deploy-gh-pages.mjs"
+    "deploy": "BUILD_FOR_GH_PAGES=true vite build && touch dist/.nojekyll && node ../scripts/deploy-gh-pages.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

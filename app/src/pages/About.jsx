@@ -73,8 +73,10 @@ export default function About() {
         {/* Background Image: Full section industrial visual reference from Hero */}
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
           <img
-            src={asset('/images/bg-hero-section.png')}
+            src={asset('/images/bg-hero-section.webp')}
             alt="Industrial Automation Background"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover object-right opacity-25 lg:opacity-35"
           />
           {/* Dark Gradient Overlay for Maximum Text Legibility and Depth */}

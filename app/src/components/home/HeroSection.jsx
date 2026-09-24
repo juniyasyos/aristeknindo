@@ -19,8 +19,10 @@ export default function HeroSection() {
           initial={{ scale: 1.06, opacity: 0.8 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.4, ease: "easeOut" }}
-          src={asset('/images/bg-hero-section.png')}
+          src={asset('/images/bg-hero-section.webp')}
           alt="Industrial Automation and Machining Background"
+          fetchpriority="high"
+          decoding="async"
           className="w-full h-full object-cover select-none pointer-events-none origin-right"
           style={{ objectPosition: '100% center' }}
         />

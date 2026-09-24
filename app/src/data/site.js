@@ -15,14 +15,23 @@ export const SITE = {
     phoneDisplay: "0812 8380 895",
     phoneSecondary: "0895 1442 9444",
     phoneRaw: "+628128380895",
+    phoneSecondaryRaw: "+6289514429444",
     whatsappNumber: "628128380895",
+    whatsappSecondaryNumber: "6289514429444",
     emailSales: "sales@aristeknindomandiri.com",
-    emailAdmin: "admin@aristeknindomandiri.com",
+    emailAdmin: "admin@aristeknindo.com",
     hoursId: "Senin – Jumat: 08.00 – 17.00 WIB | Sabtu: 08.00 – 13.00 WIB",
     hoursEn: "Monday – Friday: 08:00 – 17:00 WIB | Saturday: 08:00 – 13:00 WIB",
     emergencyNoteId: "Layanan Darurat On-Call Tersedia untuk Downtime Kritis",
     emergencyNoteEn: "On-Call Emergency Support Available for Critical Downtime",
   },
+
+  socials: [
+    { name: "WhatsApp (Utama)", href: "https://wa.me/628128380895", type: "whatsapp", display: "0812 8380 895" },
+    { name: "WhatsApp / On-Call", href: "https://wa.me/6289514429444", type: "whatsapp", display: "0895 1442 9444" },
+    { name: "Email Sales", href: "mailto:sales@aristeknindomandiri.com", type: "email", display: "sales@aristeknindomandiri.com" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/company/aristeknindo", type: "linkedin", display: "PT. Aris Teknindo Mandiri" },
+  ],
 
   nav: [
     { key: "home", path: "/", labelId: "Beranda", labelEn: "Home" },

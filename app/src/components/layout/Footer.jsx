@@ -17,8 +17,12 @@ export default function Footer() {
           <div className="space-y-4">
             <Link to="/" className="inline-block">
               <img
-                src={asset('/images/logo-dark-mode.png')}
+                src={asset('/images/logo-dark-mode.webp')}
                 alt="PT. Aris Teknindo Mandiri"
+                width="160"
+                height="40"
+                loading="lazy"
+                decoding="async"
                 className="h-9 sm:h-10 w-auto object-contain"
               />
             </Link>
@@ -110,12 +114,25 @@ export default function Footer() {
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-brand-red shrink-0" />
                 <div className="flex gap-2">
-                  <a href={`tel:${SITE.contact.phoneRaw}`} className="hover:text-white font-mono">
+                  <a href={`tel:${SITE.contact.phoneRaw}`} className="hover:text-white font-mono transition-colors">
                     {SITE.contact.phoneDisplay}
                   </a>
                   <span>/</span>
-                  <span className="font-mono">{SITE.contact.phoneSecondary}</span>
+                  <a href={`tel:${SITE.contact.phoneSecondaryRaw}`} className="hover:text-white font-mono transition-colors">
+                    {SITE.contact.phoneSecondary}
+                  </a>
                 </div>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <a 
+                  href={`https://wa.me/${SITE.contact.whatsappNumber}`}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/20 text-xs font-mono transition-colors"
+                >
+                  <span>Chat WhatsApp: {SITE.contact.phoneDisplay}</span>
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-brand-red shrink-0" />

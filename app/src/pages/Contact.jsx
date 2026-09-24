@@ -263,7 +263,15 @@ export default function Contact() {
                     <Phone className="w-4 h-4 text-sky-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <span className="font-bold text-white block mb-0.5 text-xs">Telepon Teknis:</span>
-                      <span className="font-mono text-slate-200 text-xs">{SITE.contact.phoneDisplay} / {SITE.contact.phoneSecondary}</span>
+                      <div className="font-mono text-slate-200 text-xs flex items-center gap-1.5">
+                        <a href={`tel:${SITE.contact.phoneRaw}`} className="hover:text-brand-red transition-colors">
+                          {SITE.contact.phoneDisplay}
+                        </a>
+                        <span>/</span>
+                        <a href={`tel:${SITE.contact.phoneSecondaryRaw}`} className="hover:text-brand-red transition-colors">
+                          {SITE.contact.phoneSecondary}
+                        </a>
+                      </div>
                     </div>
                   </div>
 
