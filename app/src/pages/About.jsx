@@ -43,7 +43,7 @@ export default function About() {
             className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-canvas-card border border-brand-red/30 mb-4 sm:mb-6 shadow-sm"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
-            <span className="font-mono text-[10px] sm:text-xs text-brand-redLight uppercase tracking-wider font-semibold">
+            <span className="font-mono text-xs text-brand-redLight uppercase tracking-wider font-semibold">
               {lang === 'id' ? data.header.badgeId : data.header.badgeEn}
             </span>
           </motion.div>
@@ -52,7 +52,7 @@ export default function About() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.1 }}
-            className="text-xl sm:text-3xl lg:text-5xl font-bold sm:font-extrabold text-white tracking-tight leading-snug sm:leading-[1.18] mb-3 sm:mb-6"
+            className="text-2xl sm:text-3xl lg:text-5xl font-bold sm:font-extrabold text-white tracking-tight leading-snug sm:leading-[1.18] mb-3 sm:mb-6"
           >
             {lang === 'id' ? data.header.titleId : data.header.titleEn}
           </motion.h1>
@@ -61,7 +61,7 @@ export default function About() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.2 }}
-            className="text-xs sm:text-base lg:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed"
+            className="text-sm sm:text-base lg:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed"
           >
             {lang === 'id' ? data.header.descriptionId : data.header.descriptionEn}
           </motion.p>
@@ -97,31 +97,31 @@ export default function About() {
             >
               <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-brand-red/15 border border-brand-red/35 mb-3 sm:mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
-                <span className="text-[10px] sm:text-xs font-mono font-semibold text-brand-redLight tracking-widest uppercase">
+                <span className="text-xs font-mono font-semibold text-brand-redLight tracking-widest uppercase">
                   {lang === 'id' ? data.narrative.tagId : data.narrative.tagEn}
                 </span>
               </div>
 
-              <h2 className="text-lg sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white mt-1 mb-3 sm:mb-6 leading-snug tracking-tight">
+              <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white mt-1 mb-3 sm:mb-6 leading-snug tracking-tight">
                 {lang === 'id' ? data.narrative.headingId : data.narrative.headingEn}
               </h2>
 
-              <div className="space-y-3 sm:space-y-4 text-xs sm:text-base text-slate-300 leading-relaxed">
+              <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-slate-300 leading-relaxed">
                 <p>{lang === 'id' ? data.narrative.p1Id : data.narrative.p1En}</p>
                 <p>{lang === 'id' ? data.narrative.p2Id : data.narrative.p2En}</p>
               </div>
 
               <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-slate-border/70 grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-4">
                 <div className="p-2.5 sm:p-3.5 rounded-xl bg-canvas-card/80 border border-slate-border/70 backdrop-blur-md">
-                  <span className="text-[10px] sm:text-xs text-slate-400 block mb-0.5 sm:mb-1 font-mono">Badan Hukum</span>
+                  <span className="text-xs text-slate-400 block mb-0.5 sm:mb-1 font-mono">Badan Hukum</span>
                   <span className="text-xs sm:text-sm font-mono font-bold text-white">PT Resmi Terdaftar</span>
                 </div>
                 <div className="p-2.5 sm:p-3.5 rounded-xl bg-canvas-card/80 border border-slate-border/70 backdrop-blur-md">
-                  <span className="text-[10px] sm:text-xs text-slate-400 block mb-0.5 sm:mb-1 font-mono">Nomor Registrasi</span>
+                  <span className="text-xs text-slate-400 block mb-0.5 sm:mb-1 font-mono">Nomor Registrasi</span>
                   <span className="text-xs sm:text-sm font-mono font-bold text-emerald-400">1280189</span>
                 </div>
                 <div className="p-2.5 sm:p-3.5 rounded-xl bg-canvas-card/80 border border-slate-border/70 backdrop-blur-md col-span-2 sm:col-span-1">
-                  <span className="text-[10px] sm:text-xs text-slate-400 block mb-0.5 sm:mb-1 font-mono">Lokasi Workshop</span>
+                  <span className="text-xs text-slate-400 block mb-0.5 sm:mb-1 font-mono">Lokasi Workshop</span>
                   <span className="text-xs sm:text-sm font-mono font-bold text-white">Babelan, Bekasi</span>
                 </div>
               </div>
@@ -144,11 +144,11 @@ export default function About() {
                     <span className="p-1 sm:p-1.5 rounded-lg bg-brand-red/20 text-brand-red border border-brand-red/30">
                       <Building2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </span>
-                    <span className="font-mono text-[10px] sm:text-xs font-bold text-white uppercase tracking-wider">
+                    <span className="font-mono text-xs font-bold text-white uppercase tracking-wider">
                       {lang === 'id' ? "Infrastruktur Rekayasa" : "Engineering Infrastructure"}
                     </span>
                   </div>
-                  <span className="font-mono text-[10px] sm:text-[11px] px-2 py-0.5 rounded bg-emerald-950/70 text-emerald-400 border border-emerald-800/60 font-semibold">
+                  <span className="font-mono text-xs px-2 py-0.5 rounded bg-emerald-950/70 text-emerald-400 border border-emerald-800/60 font-semibold">
                     100% In-House
                   </span>
                 </div>
@@ -160,7 +160,7 @@ export default function About() {
                       <h4 className="text-xs sm:text-sm font-bold text-white">
                         {lang === 'id' ? "Workshop Machining Mandiri" : "Self-Operated Machining Workshop"}
                       </h4>
-                      <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 leading-snug">
+                      <p className="text-xs sm:text-sm text-slate-300 mt-0.5 leading-snug">
                         {lang === 'id' 
                           ? "Mesin Bubut, Milling, dan CNC presisi hingga ±0.01 mm di Babelan, Bekasi." 
                           : "Lathe, Milling, and CNC precision machining up to ±0.01 mm in Babelan, Bekasi."}
@@ -174,7 +174,7 @@ export default function About() {
                       <h4 className="text-xs sm:text-sm font-bold text-white">
                         {lang === 'id' ? "Kontrol Otomasi & PLC Teruji" : "Proven Automation & PLC Engineering"}
                       </h4>
-                      <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 leading-snug">
+                      <p className="text-xs sm:text-sm text-slate-300 mt-0.5 leading-snug">
                         {lang === 'id'
                           ? "Pemrograman multi-brand: Mitsubishi, Omron, Allen-Bradley, Yaskawa & HMI SCADA."
                           : "Multi-brand programming: Mitsubishi, Omron, Allen-Bradley, Yaskawa & HMI SCADA."}
@@ -188,7 +188,7 @@ export default function About() {
                       <h4 className="text-xs sm:text-sm font-bold text-white">
                         {lang === 'id' ? "Kepatuhan K3 & Standar Pabrik" : "HSE Compliance & Plant Safety"}
                       </h4>
-                      <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 leading-snug">
+                      <p className="text-xs sm:text-sm text-slate-300 mt-0.5 leading-snug">
                         {lang === 'id'
                           ? "Instalasi jalur kabel daya berstandar audit industri manufaktur dan otomotif."
                           : "Power cable routing installations meeting strict manufacturing HSE audit codes."}
@@ -197,7 +197,7 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="mt-3.5 sm:mt-5 pt-3 sm:pt-4 border-t border-slate-border/70 flex items-center justify-between text-[10px] sm:text-[11px] font-mono text-slate-400">
+                <div className="mt-3.5 sm:mt-5 pt-3 sm:pt-4 border-t border-slate-border/70 flex items-center justify-between text-xs font-mono text-slate-400">
                   <span>Kawasan Industri Jawa Barat</span>
                   <span className="text-brand-redLight font-semibold">Siaga Darurat On-Call</span>
                 </div>
@@ -221,10 +221,10 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="max-w-3xl mb-6 sm:mb-12"
           >
-            <span className="text-[10px] sm:text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
+            <span className="text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
               {lang === 'id' ? data.visionMission.tagId : data.visionMission.tagEn}
             </span>
-            <h2 className="text-lg sm:text-3xl font-bold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-4 tracking-tight">
+            <h2 className="text-xl sm:text-3xl font-bold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-4 tracking-tight">
               {lang === 'id' ? data.visionMission.headingId : data.visionMission.headingEn}
             </h2>
           </motion.div>
@@ -243,10 +243,10 @@ export default function About() {
                 <Target className="w-4 h-4 sm:w-6 sm:h-6" />
               </div>
               <div>
-                <span className="text-[10px] sm:text-xs font-mono uppercase text-brand-redLight font-bold tracking-wider block mb-1 sm:mb-2">
+                <span className="text-xs font-mono uppercase text-brand-redLight font-bold tracking-wider block mb-1 sm:mb-2">
                   {lang === 'id' ? "VISI PERUSAHAAN" : "CORPORATE VISION"}
                 </span>
-                <p className="text-xs sm:text-lg font-medium text-white leading-relaxed">
+                <p className="text-sm sm:text-lg font-medium text-white leading-relaxed">
                   "{lang === 'id' ? data.visionMission.visionId : data.visionMission.visionEn}"
                 </p>
               </div>
@@ -272,7 +272,7 @@ export default function About() {
                 <h3 className="text-sm sm:text-base font-bold text-white mb-1.5 sm:mb-2 leading-snug group-hover:text-brand-light transition-colors">
                   {lang === 'id' ? m.titleId : m.titleEn}
                 </h3>
-                <p className="text-xs text-slate-muted leading-relaxed flex-grow">
+                <p className="text-xs sm:text-sm text-slate-muted leading-relaxed flex-grow">
                   {lang === 'id' ? m.descId : m.descEn}
                 </p>
               </motion.div>
@@ -293,15 +293,15 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="text-center max-w-3xl mx-auto mb-6 sm:mb-14"
           >
-            <span className="text-[10px] sm:text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
+            <span className="text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
               {lang === 'id' ? "ETIKA & NILAI KERJA" : "CORE ENGINEERING VALUES"}
             </span>
-            <h2 className="text-lg sm:text-3xl font-bold sm:font-extrabold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-4 tracking-tight">
+            <h2 className="text-xl sm:text-3xl font-bold sm:font-extrabold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-4 tracking-tight">
               {lang === 'id' 
                 ? "4 Prinsip Operasional yang Menjaga Kepercayaan Pabrik Rekanan" 
                 : "4 Operational Principles Safeguarding Client Trust"}
             </h2>
-            <p className="text-xs sm:text-sm text-slate-muted">
+            <p className="text-sm text-slate-muted">
               {lang === 'id'
                 ? "Prinsip kerja profesional yang kami terapkan secara konsisten di workshop dan di lapangan."
                 : "Operational engineering standards upheld across our workshop and on client plant floors."}
@@ -326,10 +326,10 @@ export default function About() {
                 <h3 className="text-base sm:text-lg font-bold text-white mb-1 group-hover:text-brand-light transition-colors">
                   {lang === 'id' ? val.titleId : val.titleEn}
                 </h3>
-                <span className="text-[11px] sm:text-xs font-medium text-brand-redLight mb-2 sm:mb-3">
+                <span className="text-xs sm:text-sm font-medium text-brand-redLight mb-2 sm:mb-3">
                   {lang === 'id' ? val.subId : val.subEn}
                 </span>
-                <p className="text-xs text-slate-muted leading-relaxed flex-grow">
+                <p className="text-xs sm:text-sm text-slate-muted leading-relaxed flex-grow">
                   {lang === 'id' ? val.descId : val.descEn}
                 </p>
               </motion.div>
@@ -350,13 +350,13 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="mb-6 sm:mb-10 text-center sm:text-left"
           >
-            <span className="text-[10px] sm:text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
+            <span className="text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
               {lang === 'id' ? data.legalVerification.tagId : data.legalVerification.tagEn}
             </span>
-            <h2 className="text-lg sm:text-3xl font-bold sm:font-extrabold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-3 tracking-tight">
+            <h2 className="text-xl sm:text-3xl font-bold sm:font-extrabold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-3 tracking-tight">
               {lang === 'id' ? data.legalVerification.headingId : data.legalVerification.headingEn}
             </h2>
-            <p className="text-xs sm:text-sm text-slate-muted">
+            <p className="text-sm text-slate-muted">
               {lang === 'id' ? data.legalVerification.subheadingId : data.legalVerification.subheadingEn}
             </p>
           </motion.div>
@@ -373,12 +373,12 @@ export default function About() {
               {data.legalVerification.fields.map((f, idx) => (
                 <div key={idx} className="p-3.5 sm:p-5 grid grid-cols-1 sm:grid-cols-12 gap-1.5 sm:gap-6 items-center hover:bg-canvas-subtle/50 transition-colors">
                   <div className="sm:col-span-4">
-                    <span className="text-[10px] sm:text-xs font-mono text-slate-subtle uppercase">
+                    <span className="text-xs font-mono text-slate-subtle uppercase">
                       {lang === 'id' ? f.labelId : f.labelEn}
                     </span>
                   </div>
                   <div className="sm:col-span-8">
-                    <span className="text-xs sm:text-sm font-semibold text-slate-200">
+                    <span className="text-sm font-semibold text-slate-200">
                       {f.value}
                     </span>
                   </div>
@@ -401,16 +401,16 @@ export default function About() {
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-brand-red/10 border border-brand-red/30 text-brand-redLight font-mono text-[10px] sm:text-xs mb-3 sm:mb-6">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-brand-red/10 border border-brand-red/30 text-brand-redLight font-mono text-xs mb-3 sm:mb-6">
               <FileCheck className="w-3.5 h-3.5" />
               <span>Vendor Enrollment & Facility Survey</span>
             </div>
 
-            <h2 className="text-lg sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white mb-2 sm:mb-4 tracking-tight">
+            <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white mb-2 sm:mb-4 tracking-tight">
               {lang === 'id' ? data.ctaVendor.headingId : data.ctaVendor.headingEn}
             </h2>
 
-            <p className="text-xs sm:text-base text-slate-muted max-w-2xl mx-auto mb-6 sm:mb-10 leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-muted max-w-2xl mx-auto mb-6 sm:mb-10 leading-relaxed">
               {lang === 'id' ? data.ctaVendor.descId : data.ctaVendor.descEn}
             </p>
 
@@ -418,7 +418,7 @@ export default function About() {
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full sm:w-auto">
                 <Link
                   to="/contact"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-4 rounded-xl bg-brand-red hover:bg-brand-redDark text-white font-semibold text-xs sm:text-sm shadow-lg shadow-brand-red/25 transition-all text-center"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-4 rounded-xl bg-brand-red hover:bg-brand-redDark text-white font-semibold text-sm shadow-lg shadow-brand-red/25 transition-all text-center"
                 >
                   <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                   <span>{lang === 'id' ? data.ctaVendor.ctaDocId : data.ctaVendor.ctaDocEn}</span>
@@ -430,7 +430,7 @@ export default function About() {
                   href={`https://wa.me/${SITE.contact.whatsappNumber}?text=${encodeURIComponent("Halo Manajemen PT. Aris Teknindo Mandiri, kami ingin menjadwalkan kunjungan verifikasi workshop / meminta formulir rekanan vendor pabrik.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-4 rounded-xl bg-canvas-card hover:bg-canvas-subtle border border-slate-border text-white font-semibold text-xs sm:text-sm transition-all text-center"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-7 sm:py-4 rounded-xl bg-canvas-card hover:bg-canvas-subtle border border-slate-border text-white font-semibold text-sm transition-all text-center"
                 >
                   <MessageSquare className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
                   <span>{lang === 'id' ? data.ctaVendor.ctaVisitId : data.ctaVendor.ctaVisitEn}</span>

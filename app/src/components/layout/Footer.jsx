@@ -88,7 +88,7 @@ export default function Footer() {
               <p className="text-xs text-slate-subtle">
                 {t("Pengadaan suku cadang impor standar internasional", "International standard industrial spare parts supply")}
               </p>
-              <div className="flex flex-wrap gap-1.5 text-[11px] font-mono">
+              <div className="flex flex-wrap gap-1.5 text-xs font-mono">
                 {["Mitsubishi", "Yaskawa", "THK", "HIWIN", "NSK", "Timken", "Tsubaki", "Cognex", "Autonics", "Fuji Electric"].map(brand => (
                   <span key={brand} className="px-2 py-1 rounded bg-canvas-card border border-slate-border text-slate-muted">
                     {brand}

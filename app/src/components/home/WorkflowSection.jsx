@@ -22,10 +22,10 @@ export default function WorkflowSection() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-3xl mx-auto mb-6 sm:mb-16"
         >
-          <span className="text-[10px] sm:text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
+          <span className="text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
             {lang === 'id' ? data.tagId : data.tagEn}
           </span>
-          <h2 className="text-lg sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-4 tracking-tight">
+          <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-4 tracking-tight">
             {lang === 'id' ? data.headingId : data.headingEn}
           </h2>
           <p className="text-xs sm:text-base text-slate-muted hidden sm:block">
@@ -52,11 +52,11 @@ export default function WorkflowSection() {
                 {/* Accent top hover highlight bar */}
                 <div className="absolute top-0 left-4 right-4 h-[2px] bg-gradient-to-r from-transparent via-brand-red to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                <div className="font-mono text-base sm:text-2xl md:text-3xl font-black text-brand-red/90 group-hover:text-brand-red md:mb-2.5 transition-colors shrink-0 w-7 md:w-auto">
+                <div className="font-mono text-xl sm:text-2xl md:text-3xl font-black text-brand-red/90 group-hover:text-brand-red md:mb-2.5 transition-colors shrink-0 w-8 md:w-auto">
                   {item.step}
                 </div>
                 <div>
-                  <h3 className="text-xs sm:text-sm md:text-base font-semibold sm:font-bold text-white md:mb-2 leading-snug group-hover:text-brand-light transition-colors">
+                  <h3 className="text-sm sm:text-sm md:text-base font-bold text-white md:mb-2 leading-snug group-hover:text-brand-light transition-colors">
                     {lang === 'id' ? item.titleId : item.titleEn}
                   </h3>
                   {/* Hide verbose paragraph on mobile to prevent excessive scrolling */}

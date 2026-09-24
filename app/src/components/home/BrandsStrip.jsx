@@ -20,16 +20,16 @@ function BrandCard({ brand }) {
       {/* Info details */}
       <div className="flex flex-col text-left pr-1">
         <div className="flex items-center gap-1">
-          <span className="font-mono text-[11px] sm:text-xs font-semibold text-slate-200 group-hover:text-white leading-tight">
+          <span className="font-mono text-xs sm:text-sm font-semibold text-slate-200 group-hover:text-white leading-tight">
             {brand.name}
           </span>
           {brand.origin && (
-            <span className="text-[8px] sm:text-[9px] font-mono text-slate-400 border border-slate-700/60 rounded px-1 py-0.5 leading-none">
+            <span className="text-xs font-mono text-slate-400 border border-slate-700/60 rounded px-1.5 py-0.5 leading-none">
               {brand.origin}
             </span>
           )}
         </div>
-        <span className="text-[9px] sm:text-[10px] text-slate-400 group-hover:text-brand-redLight leading-tight mt-0.5 max-w-[120px] sm:max-w-[140px] truncate">
+        <span className="text-xs text-slate-400 group-hover:text-brand-redLight leading-tight mt-0.5 max-w-[130px] sm:max-w-[150px] truncate">
           {brand.category}
         </span>
       </div>
@@ -54,11 +54,11 @@ export default function BrandsStrip() {
         {/* Header: Concise & Authoritative */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-4">
           <div>
-            <div className="flex items-center gap-1.5 text-[10px] sm:text-xs font-mono text-brand-red uppercase tracking-wider mb-1.5 sm:mb-2">
+            <div className="flex items-center gap-1.5 text-xs font-mono text-brand-red uppercase tracking-wider mb-1.5 sm:mb-2">
               <Shield className="w-3.5 h-3.5" />
               <span>{lang === 'id' ? "Rantai Pasok Terverifikasi" : "Verified Supply Chain"}</span>
             </div>
-            <h2 className="text-base sm:text-2xl font-bold text-white tracking-tight">
+            <h2 className="text-lg sm:text-2xl font-bold text-white tracking-tight">
               {lang === 'id' 
                 ? "Suku Cadang & Komponen Orisinal dari Prinsipal Dunia" 
                 : "Genuine Components from Global Tier-1 Principals"}
@@ -84,7 +84,7 @@ export default function BrandsStrip() {
         <div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-2 flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-tech-cyan" />
-            <span className="font-mono text-[10px] sm:text-[11px] text-slate-400 uppercase tracking-wider">
+            <span className="font-mono text-xs text-slate-300 uppercase tracking-wider">
               {lang === 'id' ? "Otomasi & Kontrol (PLC, Inverter, Sensor, Vision)" : "Automation & Control (PLC, Inverter, Sensors, Vision)"}
             </span>
           </div>
@@ -99,7 +99,7 @@ export default function BrandsStrip() {
         <div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-2 flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-red" />
-            <span className="font-mono text-[10px] sm:text-[11px] text-slate-400 uppercase tracking-wider">
+            <span className="font-mono text-xs text-slate-300 uppercase tracking-wider">
               {lang === 'id' ? "Mekanikal & Presisi (Bearing, Linear Motion, Gear, Rantai)" : "Mechanical & Motion (Bearings, Linear Motion, Gears, Chains)"}
             </span>
           </div>
@@ -116,19 +116,19 @@ export default function BrandsStrip() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 sm:mt-8">
         <div className="pt-3.5 sm:pt-4 border-t border-slate-border/50 flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-muted gap-2.5 sm:gap-4">
           <div className="flex flex-wrap items-center gap-2 sm:gap-4">
-            <span className="flex items-center gap-1.5 text-emerald-400 font-medium text-[11px] sm:text-xs">
+            <span className="flex items-center gap-1.5 text-emerald-400 font-medium text-xs sm:text-sm">
               <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
               {lang === 'id' ? "100% Jaminan Suku Cadang Orisinal" : "100% Genuine Part Guarantee"}
             </span>
             <span className="hidden md:inline text-slate-border">•</span>
-            <span className="text-slate-300 text-[11px] sm:text-xs hidden md:inline">
+            <span className="text-slate-300 text-xs sm:text-sm hidden md:inline">
               {lang === 'id' ? "Inquiry Langsung dengan Nomor Seri / Drawing" : "Direct Inquiry by Serial Number / Drawing"}
             </span>
           </div>
 
           <Link
             to="/products"
-            className="inline-flex items-center gap-1 text-[11px] sm:text-xs text-brand-redLight hover:text-white font-medium transition-colors group"
+            className="inline-flex items-center gap-1 text-xs sm:text-sm text-brand-redLight hover:text-white font-medium transition-colors group"
           >
             <span>{lang === 'id' ? "Lihat Katalog 29+ Brand Lengkap" : "View Full Parts Catalog"}</span>
             <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0" />

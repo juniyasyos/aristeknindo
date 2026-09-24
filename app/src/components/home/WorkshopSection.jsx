@@ -92,12 +92,12 @@ export default function WorkshopSection() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-1.5 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md bg-brand-red/10 border border-brand-red/30 mb-2 sm:mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
-              <span className="text-[10px] sm:text-xs font-mono font-semibold text-brand-light tracking-wider uppercase">
+              <span className="text-xs font-mono font-semibold text-brand-light tracking-wider uppercase">
                 {lang === 'id' ? data.tagId : data.tagEn}
               </span>
             </div>
             
-            <h2 className="text-lg sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white tracking-tight leading-snug sm:leading-tight">
+            <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white tracking-tight leading-snug sm:leading-tight">
               {lang === 'id' ? data.headingId : data.headingEn}
             </h2>
             <p className="text-xs sm:text-base text-slate-muted mt-2 sm:mt-3 max-w-2xl leading-relaxed hidden sm:block">
@@ -115,15 +115,15 @@ export default function WorkshopSection() {
             </div>
             <div className="flex-grow">
               <div className="flex items-center gap-2">
-                <span className="text-[10px] sm:text-xs font-mono font-bold text-white uppercase tracking-wider">
+                <span className="text-xs font-mono font-bold text-white uppercase tracking-wider">
                   Babelan, Bekasi
                 </span>
-                <span className="inline-flex items-center gap-1 text-[8px] sm:text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                <span className="inline-flex items-center gap-1 text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   {lang === 'id' ? "Siap Dikunjungi" : "Open for Visits"}
                 </span>
               </div>
-              <p className="text-[10px] sm:text-[11px] text-slate-muted mt-0.5 hidden sm:block">
+              <p className="text-xs text-slate-muted mt-0.5 hidden sm:block">
                 {lang === 'id' ? "Survei bengkel kerja terbuka untuk tim engineering & purchasing" : "Open workshop survey for engineering & purchasing teams"}
               </p>
             </div>
@@ -156,7 +156,7 @@ export default function WorkshopSection() {
                 )}
 
                 <div className="flex items-center justify-between mb-1 sm:mb-2">
-                  <span className={`text-[8px] sm:text-[10px] font-mono font-bold tracking-wider uppercase px-1 sm:px-2 py-0.5 rounded transition-colors ${
+                  <span className={`text-xs font-mono font-bold tracking-wider uppercase px-1.5 sm:px-2 py-0.5 rounded transition-colors ${
                     isActive 
                       ? "bg-brand-red/20 text-brand-light border border-brand-red/30" 
                       : "bg-canvas text-slate-subtle border border-slate-border/50"
@@ -167,10 +167,10 @@ export default function WorkshopSection() {
                 </div>
 
                 <div>
-                  <h3 className={`text-[11px] sm:text-sm font-bold truncate transition-colors ${isActive ? "text-white" : "text-slate-200"}`}>
+                  <h3 className={`text-xs sm:text-sm font-bold truncate transition-colors ${isActive ? "text-white" : "text-slate-200"}`}>
                     {lang === 'id' ? fac.titleId : fac.titleEn}
                   </h3>
-                  <p className="text-[10px] sm:text-[11px] text-slate-muted truncate mt-0.5 hidden sm:block">
+                  <p className="text-xs text-slate-muted truncate mt-0.5 hidden sm:block">
                     {lang === 'id' ? fac.roleId : fac.roleEn}
                   </p>
                 </div>
@@ -190,15 +190,15 @@ export default function WorkshopSection() {
               <div className="relative z-20 flex items-center justify-between px-3 py-2 sm:px-4 sm:py-3 bg-canvas-alt/90 backdrop-blur-md border-b border-slate-border/80">
                 <div className="flex items-center gap-1.5 sm:gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
-                  <span className="text-[10px] sm:text-[11px] font-mono font-bold text-white tracking-wider">
+                  <span className="text-xs font-mono font-bold text-white tracking-wider">
                     STATION 0{activeIdx + 1} // {activeFac.id.toUpperCase()}
                   </span>
-                  <span className="hidden sm:inline text-[10px] font-mono text-slate-subtle border-l border-slate-border pl-2">
+                  <span className="hidden sm:inline text-xs font-mono text-slate-subtle border-l border-slate-border pl-2">
                     IN-HOUSE ASSET
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[9px] sm:text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-1.5 sm:px-2 py-0.5 rounded border border-emerald-500/20">
+                  <span className="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-1.5 sm:px-2 py-0.5 rounded border border-emerald-500/20">
                     ● {lang === 'id' ? "OPERASIONAL" : "OPERATIONAL"}
                   </span>
                 </div>
@@ -245,7 +245,7 @@ export default function WorkshopSection() {
                   <div className="p-2 sm:p-3 rounded-xl bg-canvas-card/90 backdrop-blur-md border border-slate-border/80 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-2.5 shadow-lg">
                     <div className="flex items-center gap-1.5 flex-shrink-0">
                       <Sparkles className="w-3.5 h-3.5 text-brand-light" />
-                      <span className="text-[10px] sm:text-[11px] font-mono font-bold text-slate-200 uppercase tracking-wider">
+                      <span className="text-xs font-mono font-bold text-slate-200 uppercase tracking-wider">
                         {lang === 'id' ? "Output Tipikal:" : "Typical Deliverables:"}
                       </span>
                     </div>
@@ -262,7 +262,7 @@ export default function WorkshopSection() {
                           {(activeFac.outputs || []).map((out, oIdx) => (
                             <span
                               key={oIdx}
-                              className="text-[10px] sm:text-[11px] font-mono px-1.5 sm:px-2 py-0.5 rounded bg-canvas-hover text-slate-200 border border-slate-border/70 flex items-center gap-1 hover:border-brand-red/50 transition-colors"
+                              className="text-xs font-mono px-1.5 sm:px-2 py-0.5 rounded bg-canvas-hover text-slate-200 border border-slate-border/70 flex items-center gap-1 hover:border-brand-red/50 transition-colors"
                             >
                               <span className="w-1 h-1 rounded-full bg-brand-red" />
                               {out}
@@ -293,10 +293,10 @@ export default function WorkshopSection() {
                 >
                   {/* Station Title & Role */}
                   <div className="mb-2.5 sm:mb-4">
-                    <span className="text-[9px] sm:text-xs font-mono font-bold text-brand-light tracking-widest uppercase block mb-0.5 sm:mb-1">
+                    <span className="text-xs font-mono font-bold text-brand-light tracking-widest uppercase block mb-0.5 sm:mb-1">
                       {lang === 'id' ? activeFac.roleId : activeFac.roleEn}
                     </span>
-                    <h3 className="text-base sm:text-2xl font-bold sm:font-extrabold text-white tracking-tight">
+                    <h3 className="text-lg sm:text-2xl font-bold sm:font-extrabold text-white tracking-tight">
                       {lang === 'id' ? activeFac.titleId : activeFac.titleEn}
                     </h3>
                     {/* Hide redundant narrative paragraph on mobile to prevent wall of words */}
@@ -308,11 +308,11 @@ export default function WorkshopSection() {
                   {/* Technical Specifications Matrix (Data Sheet Plate) */}
                   <div className="mb-3 sm:mb-6 p-2.5 sm:p-4 rounded-xl bg-canvas border border-slate-border/80">
                     <div className="flex items-center justify-between pb-1.5 mb-1.5 sm:pb-3 sm:mb-3 border-b border-slate-border/60">
-                      <span className="text-[9px] sm:text-[11px] font-mono font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+                      <span className="text-xs font-mono font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
                         <span className="w-1.5 h-1.5 rounded-sm bg-brand-red" />
                         {lang === 'id' ? "Parameter Teknis Mesin" : "Technical Parameters"}
                       </span>
-                      <span className="text-[8px] sm:text-[10px] font-mono text-slate-subtle">
+                      <span className="text-xs font-mono text-slate-subtle">
                         ISO FIT
                       </span>
                     </div>
@@ -320,10 +320,10 @@ export default function WorkshopSection() {
                     <div className="grid grid-cols-2 gap-2 sm:gap-3.5">
                       {(activeFac.specs || []).map((spec, sIdx) => (
                         <div key={sIdx} className="space-y-0.5">
-                          <span className="text-[8px] sm:text-[10px] font-mono text-slate-subtle uppercase block tracking-wider truncate">
+                          <span className="text-xs font-mono text-slate-subtle uppercase block tracking-wider truncate">
                             {lang === 'id' ? spec.labelId : spec.labelEn}
                           </span>
-                          <span className="text-[11px] sm:text-sm font-semibold text-slate-100 font-mono block">
+                          <span className="text-xs sm:text-sm font-semibold text-slate-100 font-mono block">
                             {spec.val}
                           </span>
                         </div>
@@ -333,12 +333,12 @@ export default function WorkshopSection() {
 
                   {/* Key Capabilities List: Top 2 on Mobile, All on Desktop */}
                   <div className="mb-3 sm:mb-6">
-                    <span className="text-[9px] sm:text-[11px] font-mono font-bold text-slate-subtle uppercase tracking-wider block mb-1 sm:mb-2">
+                    <span className="text-xs font-mono font-bold text-slate-subtle uppercase tracking-wider block mb-1 sm:mb-2">
                       {lang === 'id' ? "Cakupan Pengerjaan Utama:" : "Core Machining Scope:"}
                     </span>
-                    <ul className="space-y-1 sm:space-y-2">
+                    <ul className="space-y-1.5 sm:space-y-2">
                       {activeFac.capabilities.map((cap, cIdx) => (
-                        <li key={cIdx} className={`items-start gap-1.5 sm:gap-2 text-[11px] sm:text-sm text-slate-200 ${cIdx >= 2 ? 'hidden sm:flex' : 'flex'}`}>
+                        <li key={cIdx} className={`items-start gap-1.5 sm:gap-2 text-xs sm:text-sm text-slate-200 ${cIdx >= 2 ? 'hidden sm:flex' : 'flex'}`}>
                           <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                           <span className="leading-snug">{cap}</span>
                         </li>
@@ -356,9 +356,9 @@ export default function WorkshopSection() {
                   href={waUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:flex-1 inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 py-2.5 sm:py-3.5 rounded-xl bg-brand-red hover:bg-brand-hover text-white text-xs sm:text-sm font-bold transition-all shadow-lg shadow-brand-red/25 group text-center"
+                  className="w-full sm:flex-1 inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 py-3 sm:py-3.5 rounded-xl bg-brand-red hover:bg-brand-hover text-white text-sm font-bold transition-all shadow-lg shadow-brand-red/25 group text-center"
                 >
-                  <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
+                  <FileText className="w-4 h-4 flex-shrink-0" />
                   <span>{lang === 'id' ? "Kirim Drawing via WhatsApp" : "Send Drawing via WhatsApp"}</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                 </motion.a>
@@ -366,7 +366,7 @@ export default function WorkshopSection() {
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full sm:w-auto">
                   <Link
                     to="/contact"
-                    className="w-full inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 py-2 sm:py-3 rounded-xl bg-canvas-hover hover:bg-slate-active text-slate-200 hover:text-white border border-slate-border text-xs sm:text-sm font-semibold transition-all text-center"
+                    className="w-full inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 py-2.5 sm:py-3 rounded-xl bg-canvas-hover hover:bg-slate-active text-slate-200 hover:text-white border border-slate-border text-sm font-semibold transition-all text-center"
                   >
                     <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-muted flex-shrink-0" />
                     <span>{lang === 'id' ? "Jadwalkan Kunjungan" : "Schedule Facility Visit"}</span>
@@ -398,15 +398,15 @@ export default function WorkshopSection() {
                     <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg bg-canvas-hover border border-slate-border flex items-center justify-center">
                       <ItemIcon className="w-3 h-3 sm:w-4 sm:h-4 text-brand-light" />
                     </div>
-                    <span className="text-[8px] sm:text-[10px] font-mono px-1.5 sm:px-2 py-0.5 rounded bg-canvas border border-slate-border/80 text-emerald-400 font-bold">
+                    <span className="text-xs font-mono px-1.5 sm:px-2 py-0.5 rounded bg-canvas border border-slate-border/80 text-emerald-400 font-bold">
                       {item.metric}
                     </span>
                   </div>
-                  <h4 className="text-[11px] sm:text-sm font-semibold sm:font-bold text-white mb-0.5 sm:mb-1.5 leading-snug">
+                  <h4 className="text-xs sm:text-sm font-semibold sm:font-bold text-white mb-0.5 sm:mb-1.5 leading-snug">
                     {lang === 'id' ? item.titleId : item.titleEn}
                   </h4>
                   {/* Hide verbose paragraph on mobile for a sleek badge look */}
-                  <p className="text-[11px] sm:text-xs text-slate-muted leading-relaxed hidden sm:block">
+                  <p className="text-xs text-slate-muted leading-relaxed hidden sm:block">
                     {lang === 'id' ? item.descId : item.descEn}
                   </p>
                 </div>

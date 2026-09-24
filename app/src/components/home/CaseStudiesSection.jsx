@@ -24,10 +24,10 @@ export default function CaseStudiesSection() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mb-6 sm:mb-12"
         >
-          <span className="text-[10px] sm:text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
+          <span className="text-xs font-mono font-semibold text-brand-red tracking-widest uppercase">
             {lang === 'id' ? data.tagId : data.tagEn}
           </span>
-          <h2 className="text-lg sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-4 tracking-tight">
+          <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold sm:font-extrabold text-white mt-1.5 sm:mt-2 mb-2 sm:mb-4 tracking-tight">
             {lang === 'id' ? data.headingId : data.headingEn}
           </h2>
           <p className="text-xs sm:text-base text-slate-muted hidden sm:block">
@@ -61,27 +61,27 @@ export default function CaseStudiesSection() {
 
               <div className="p-3.5 sm:p-6 lg:p-8 flex flex-col flex-grow">
                 <div className="flex flex-wrap items-center justify-between gap-1.5 mb-2.5 sm:mb-3">
-                  <span className="text-[10px] sm:text-xs font-mono uppercase text-brand-redLight bg-brand-red/10 px-2 py-0.5 rounded border border-brand-red/20">
+                  <span className="text-xs font-mono uppercase text-brand-redLight bg-brand-red/10 px-2 py-0.5 rounded border border-brand-red/20">
                     {cs.category}
                   </span>
-                  <span className="text-[10px] sm:text-xs font-mono text-emerald-400 flex items-center gap-1">
-                    <CheckCircle2 className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
+                  <span className="text-xs font-mono text-emerald-400 flex items-center gap-1">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
                     {cs.badge}
                   </span>
                 </div>
 
-                <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-2 group-hover:text-brand-light transition-colors leading-snug">
+                <h3 className="text-base sm:text-xl font-bold text-white mb-1.5 sm:mb-2 group-hover:text-brand-light transition-colors leading-snug">
                   {lang === 'id' ? cs.titleId : cs.titleEn}
                 </h3>
                 
-                <div className="text-[10px] sm:text-xs font-mono text-slate-subtle mb-2.5 sm:mb-4">
+                <div className="text-xs font-mono text-slate-subtle mb-2.5 sm:mb-4">
                   <span>{lang === 'id' ? "Sistem: " : "System: "}</span>
                   <span className="text-slate-200">{lang === 'id' ? cs.systemId : cs.systemEn}</span>
                 </div>
 
                 {/* Scope of Work: Visible on Desktop, Hidden on Mobile to reduce text density */}
                 <div className="p-2.5 sm:p-3.5 rounded-xl bg-canvas-subtle/80 border border-slate-border/60 mb-2.5 sm:mb-4 hidden sm:block">
-                  <span className="text-[10px] sm:text-[11px] font-mono text-slate-subtle uppercase tracking-wider block mb-1">
+                  <span className="text-xs font-mono text-slate-subtle uppercase tracking-wider block mb-1">
                     {lang === 'id' ? "Lingkup Pekerjaan:" : "Scope of Work:"}
                   </span>
                   <p className="text-xs text-slate-300 leading-relaxed">
@@ -91,10 +91,10 @@ export default function CaseStudiesSection() {
 
                 {/* Field Impact: High Priority Outcome on all viewports */}
                 <div className="p-2.5 sm:p-3.5 rounded-xl bg-canvas-subtle/80 border border-slate-border/60 mb-3 sm:mb-6 flex-grow">
-                  <span className="text-[9px] sm:text-[11px] font-mono text-slate-subtle uppercase tracking-wider block mb-1">
+                  <span className="text-xs font-mono text-slate-subtle uppercase tracking-wider block mb-1">
                     {lang === 'id' ? "Dampak & Hasil di Lapangan:" : "Field Impact:"}
                   </span>
-                  <p className="text-[11px] sm:text-xs text-emerald-300 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-emerald-300 leading-relaxed">
                     {lang === 'id' ? cs.impactId : cs.impactEn}
                   </p>
                 </div>
@@ -104,20 +104,20 @@ export default function CaseStudiesSection() {
                     {cs.brandsInvolved.map((b, bIdx) => (
                       <span
                         key={bIdx}
-                        className="px-2 py-0.5 rounded bg-canvas font-mono text-[10px] text-slate-muted border border-slate-border"
+                        className="px-2 py-0.5 rounded bg-canvas font-mono text-xs text-slate-muted border border-slate-border"
                       >
                         {b}
                       </span>
                     ))}
                   </div>
 
-                  <span className="sm:hidden text-[10px] font-mono text-slate-400">
+                  <span className="sm:hidden text-xs font-mono text-slate-400">
                     Selesai & Beroperasi
                   </span>
 
                   <Link
                     to="/projects"
-                    className="text-xs font-semibold text-brand-redLight hover:text-white inline-flex items-center gap-1 group/link py-1 ml-auto sm:ml-0"
+                    className="text-xs sm:text-sm font-semibold text-brand-redLight hover:text-white inline-flex items-center gap-1 group/link py-1 ml-auto sm:ml-0"
                   >
                     <span>{lang === 'id' ? "Dokumentasi Lengkap" : "View Case"}</span>
                     <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />

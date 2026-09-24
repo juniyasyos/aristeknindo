@@ -26,7 +26,7 @@ export default function Projects() {
             className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-canvas-card border border-brand-red/30 mb-4 sm:mb-6 shadow-sm"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
-            <span className="font-mono text-[10px] sm:text-xs text-brand-redLight uppercase tracking-wider font-semibold">
+            <span className="font-mono text-xs text-brand-redLight uppercase tracking-wider font-semibold">
               {lang === 'id' ? "REKAM JEJAK PEKERJAAN LAPANGAN" : "FIELD CASE STUDIES & TRACK RECORD"}
             </span>
           </motion.div>
@@ -35,7 +35,7 @@ export default function Projects() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.1 }}
-            className="text-xl sm:text-3xl lg:text-5xl font-bold sm:font-extrabold text-white tracking-tight leading-snug sm:leading-[1.18] mb-3 sm:mb-6"
+            className="text-2xl sm:text-3xl lg:text-5xl font-bold sm:font-extrabold text-white tracking-tight leading-snug sm:leading-[1.18] mb-3 sm:mb-6"
           >
             {lang === 'id'
               ? "Dokumentasi Studi Kasus Teknis di Lini Manufaktur & Otomotif"
@@ -46,7 +46,7 @@ export default function Projects() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.2 }}
-            className="text-xs sm:text-base lg:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed"
+            className="text-sm sm:text-base lg:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed"
           >
             {lang === 'id'
               ? "Dokumentasi pekerjaan langsung yang pernah ditangani tim PT. Aris Teknindo Mandiri, membuktikan keahlian kami pada platform industri global seperti FANUC, Allen-Bradley, hingga weighing automation."
@@ -77,53 +77,53 @@ export default function Projects() {
                 <div className="lg:col-span-7 flex flex-col justify-between h-full">
                   <div>
                     <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
-                      <span className="text-[10px] sm:text-xs font-mono uppercase text-brand-redLight bg-brand-red/10 px-2 sm:px-2.5 py-0.5 rounded border border-brand-red/20 font-semibold">
+                      <span className="text-xs font-mono uppercase text-brand-redLight bg-brand-red/10 px-2.5 py-1 rounded border border-brand-red/20 font-semibold">
                         {cs.category}
                       </span>
-                      <span className="text-[10px] sm:text-xs font-mono text-emerald-400 flex items-center gap-1">
+                      <span className="text-xs font-mono text-emerald-400 flex items-center gap-1 font-semibold">
                         <CheckCircle2 className="w-3.5 h-3.5" />
                         {cs.badge}
                       </span>
                     </div>
 
-                    <h2 className="text-base sm:text-2xl lg:text-3xl font-bold text-white mb-2 sm:mb-3 group-hover:text-brand-light transition-colors leading-snug">
+                    <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-white mb-2 sm:mb-3 group-hover:text-brand-light transition-colors leading-snug">
                       {lang === 'id' ? cs.titleId : cs.titleEn}
                     </h2>
 
-                    <div className="text-[11px] sm:text-xs font-mono text-slate-400 mb-4 sm:mb-6">
+                    <div className="text-xs sm:text-sm font-mono text-slate-400 mb-4 sm:mb-6">
                       <span>{lang === 'id' ? "Sistem: " : "System: "}</span>
                       <span className="text-slate-200 font-semibold">{lang === 'id' ? cs.systemId : cs.systemEn}</span>
                     </div>
 
                     <div className="space-y-2.5 sm:space-y-4 mb-4 sm:mb-6">
-                      <div className="p-3 sm:p-4 rounded-xl bg-canvas-subtle/80 border border-slate-border/60">
-                        <span className="text-[10px] sm:text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">
+                      <div className="p-3.5 sm:p-4 rounded-xl bg-canvas-subtle/80 border border-slate-border/60">
+                        <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">
                           {lang === 'id' ? "Lingkup Pekerjaan & Tindakan Teknis" : "Scope & Engineering Actions"}
                         </span>
-                        <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        <p className="text-sm text-slate-300 leading-relaxed">
                           {lang === 'id' ? cs.scopeId : cs.scopeEn}
                         </p>
                       </div>
 
-                      <div className="p-3 sm:p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/20">
-                        <span className="text-[10px] sm:text-xs font-mono text-emerald-400 uppercase tracking-wider block mb-1">
+                      <div className="p-3.5 sm:p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/20">
+                        <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider block mb-1">
                           {lang === 'id' ? "Dampak di Lini Pabrik" : "Plant Operational Impact"}
                         </span>
-                        <p className="text-xs sm:text-sm text-emerald-200 leading-relaxed">
+                        <p className="text-sm text-emerald-200 leading-relaxed">
                           {lang === 'id' ? cs.impactId : cs.impactEn}
                         </p>
                       </div>
                     </div>
 
                     <div className="mb-4 sm:mb-6">
-                      <span className="text-[10px] sm:text-xs font-mono text-slate-400 block mb-2">
+                      <span className="text-xs font-mono text-slate-400 block mb-2">
                         Hardware & Platform Terkait
                       </span>
                       <div className="flex flex-wrap gap-1.5 sm:gap-2">
                         {cs.brandsInvolved.map((b, bIdx) => (
                           <span
                             key={bIdx}
-                            className="px-2 sm:px-2.5 py-0.5 sm:py-1 rounded bg-canvas text-[11px] sm:text-xs font-mono text-slate-300 border border-slate-700/60"
+                            className="px-2.5 py-1 rounded bg-canvas text-xs sm:text-sm font-mono text-slate-300 border border-slate-700/60"
                           >
                             {b}
                           </span>
@@ -136,7 +136,7 @@ export default function Projects() {
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                       <Link
                         to="/contact"
-                        className="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-brand-red hover:bg-brand-redDark text-white text-xs sm:text-sm font-semibold shadow-md transition-all text-center w-full sm:w-auto"
+                        className="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-brand-red hover:bg-brand-redDark text-white text-sm font-semibold shadow-md transition-all text-center w-full sm:w-auto"
                       >
                         <span>{lang === 'id' ? "Diskusikan Proyek Serupa" : "Discuss Similar Project"}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -148,7 +148,7 @@ export default function Projects() {
                         href={`https://wa.me/${SITE.contact.whatsappNumber}?text=${encodeURIComponent(`Halo tim teknis PT ATM, kami ingin mendiskusikan kebutuhan terkait proyek: ${cs.titleId}`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-canvas border border-slate-border text-xs sm:text-sm text-white hover:bg-canvas-subtle transition-all text-center w-full sm:w-auto"
+                        className="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-lg bg-canvas border border-slate-border text-sm text-white hover:bg-canvas-subtle transition-all text-center w-full sm:w-auto"
                       >
                         <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
                         <span>Konsultasi Teknis</span>
@@ -163,7 +163,7 @@ export default function Projects() {
                   {cs.images.map((img, iIdx) => (
                     <div key={iIdx} className="rounded-xl overflow-hidden border border-slate-border bg-canvas shadow-lg relative group/img">
                       <img src={img} alt={cs.titleId} className="w-full h-44 sm:h-52 object-cover object-center group-hover/img:scale-105 transition-transform duration-700" />
-                      <div className="p-2 bg-canvas-card/95 border-t border-slate-border/60 text-[10px] font-mono text-slate-400 text-right">
+                      <div className="p-2 bg-canvas-card/95 border-t border-slate-border/60 text-xs font-mono text-slate-400 text-right">
                         Dokumentasi Lapangan Riil ATM
                       </div>
                     </div>

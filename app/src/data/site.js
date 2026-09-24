@@ -12,11 +12,11 @@ export const SITE = {
   
   contact: {
     address: "Perum Pondok Permata C17/46, Babelan, Bekasi – Jawa Barat, Indonesia",
-    phoneDisplay: "0812 8380 895",
+    phoneDisplay: "0895 1442 9444",
     phoneSecondary: "0895 1442 9444",
-    phoneRaw: "+628128380895",
+    phoneRaw: "+6289514429444",
     phoneSecondaryRaw: "+6289514429444",
-    whatsappNumber: "628128380895",
+    whatsappNumber: "6289514429444",
     whatsappSecondaryNumber: "6289514429444",
     emailSales: "sales@aristeknindomandiri.com",
     emailAdmin: "admin@aristeknindo.com",
@@ -27,8 +27,7 @@ export const SITE = {
   },
 
   socials: [
-    { name: "WhatsApp (Utama)", href: "https://wa.me/628128380895", type: "whatsapp", display: "0812 8380 895" },
-    { name: "WhatsApp / On-Call", href: "https://wa.me/6289514429444", type: "whatsapp", display: "0895 1442 9444" },
+    { name: "WhatsApp", href: "https://wa.me/6289514429444", type: "whatsapp", display: "0895 1442 9444" },
     { name: "Email Sales", href: "mailto:sales@aristeknindomandiri.com", type: "email", display: "sales@aristeknindomandiri.com" },
     { name: "LinkedIn", href: "https://www.linkedin.com/company/aristeknindo", type: "linkedin", display: "PT. Aris Teknindo Mandiri" },
   ],
