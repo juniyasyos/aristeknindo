@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow internal backend endpoints & logs
+Disallow: /api/
+Disallow: /data/
+
+# Official Sitemap
+Sitemap: https://aristeknindomandiri.com/sitemap.xml
